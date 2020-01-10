@@ -3,6 +3,17 @@ body{
     margin:0px;
 }
 
+.footerlink{
+
+    color:#ffffff;
+}
+
+.footerlink:hover{
+    color:red;
+}
+
+
+
 .nameh1{
     text-align: center;
     text-transform: capitalize;
