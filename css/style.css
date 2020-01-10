@@ -1,0 +1,44 @@
+body{
+    font-size: 16px;
+    margin:0px;
+}
+
+.nameh1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+main{
+    min-height: 400px;
+}
+
+header, footer{
+    background-color: #3e3e3e;
+    color:#fff;
+    text-align: center;
+    border-radius: 5px;
+    padding:15px;
+}
+
+#headerpicture{
+float: right;
+position: relative;
+top:-20px;
+}
+
+#headerpicture img{
+    width: 200px;
+}
+
+.portal ul li{
+     font-size: 20px;
+}
+
+.footer_firstline{
+    font-size: 18px;
+}
+.footer_secondliine{
+    font-size: 16px;
+}
+    
