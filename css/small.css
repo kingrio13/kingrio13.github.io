@@ -18,6 +18,7 @@ body{
     text-align: center;
     text-transform: capitalize;
     font-size: 2em;
+    font-family: 'Caesar Dressing', cursive;;
 }
 
 main{
@@ -32,11 +33,6 @@ header, footer{
     padding:15px;
 }
 
-#headerpicture{
-float: right;
-position: relative;
-top:-20px;
-}
 
 #headerpicture img{
     width: 200px;
