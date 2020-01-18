@@ -1,0 +1,77 @@
+body{
+    font-size: 16px;
+    margin:0px;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+section p{font-size: 1.5em;
+text-align: justify;
+padding:10px;
+margin:10px;}
+
+main section {
+    margin: 0.5rem;
+
+}
+
+section{
+	border: 1px solid #bbb;
+    background-color: #e3e3e3;
+    text-align: center;
+    display: block;
+    float: left;
+    margin:auto;
+    padding:auto;
+    
+}
+.footerlink{
+
+    color:#ffffff;
+}
+
+.footerlink:hover{
+    color:red;
+}
+
+
+.titlelesson{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-family: 'Caesar Dressing', cursive;;
+}
+
+
+
+.nameh3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-family: 'Caesar Dressing', cursive;;
+}
+
+main{
+    overflow: hidden;
+}
+
+header, footer{
+    background-color: #3e3e3e;
+    color:#fff;
+    text-align: center;
+    border-radius: 5px;
+    padding:15px;
+}
+
+
+
+.footer_firstline{
+    font-size: 18px;
+}
+.footer_secondliine{
+    font-size: 16px;
+}
+    
+
