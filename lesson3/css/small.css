@@ -170,3 +170,58 @@ text-align: left;
    
   }
 
+  .typography_table{
+    padding:0px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.typography_table, .typography_table td{
+    border:1px solid  #504f4f;
+}
+
+.typography_table td{
+    padding:10px;
+}
+
+.siteheader, .typographyh1{
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:#ebebeb;
+}
+
+.primarynavigation{
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    background-color:#22313f;
+}
+
+.footernavigation{
+    font-size: 	16px;
+    font-family: 'Merriweather', serif;
+    color:#504f4f;
+    background-color:#fff;
+    line-height: 1.5rem
+}
+
+.typographyh2{
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:#ebebeb;
+}
+
+
+.typographyh3{
+    font-size: 1.17em;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:#ebebeb;
+}
+
+
+.typographyp{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    background-color:#ebebeb;
+}
+
