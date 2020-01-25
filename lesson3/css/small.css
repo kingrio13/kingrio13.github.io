@@ -1,0 +1,172 @@
+/* global declaration */
+
+body{
+    font-size: 16px;
+    margin:0px;
+    background-color: #ebebeb;
+    font-family: 'Merriweather', serif; 
+    line-height: 1.5rem;
+    min-width: 320px;
+}
+
+h1,h2,h3,h4,h5,h6, .headertitle{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* 
+fonts to use
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Merriweather', serif; 
+
+*/
+
+
+.wrapper{
+    max-width: 1200px;
+    margin:auto;
+}
+
+header,
+main,
+footer {
+	margin: 0 auto;
+}
+
+
+
+/* header css here */
+header{
+    display:grid;
+    background-color: #22313f;
+    grid-template-columns: 300px auto;
+    align-items: center;
+}
+nav {
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+    font-family: 'Josefin Sans', sans-serif;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+.active a{
+    background: #bbb;
+    color: #36454f;
+}
+
+#mainlogo img{
+    max-width: 300px;
+}
+
+/* main Here */
+
+main{
+    max-width: 1200px;
+}
+article > section{
+    margin-left: 20px;
+    margin-top:10px;
+}
+
+.whitecontent{
+    background:white;
+    padding:20px;
+    margin:20px;
+}
+.color-scheme{
+    width:100%;
+
+}
+.color-scheme img{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    padding:20px
+}
+
+
+
+/* Footer Here */
+
+
+footer{
+    background-color:#fff;
+    color: #504f4f;;
+   
+    padding:15px 0px;
+}
+
+.footer_header{
+    font-size: 16px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid  #504f4f;
+  
+    margin-right: 40px;
+}
+
+.footer-category-section ul {
+    list-style: none;
+    padding:0px;
+ 
+}
+
+.footer-category-section ul li a{
+text-decoration: none;
+color: #504f4f;
+text-align: left;
+}
+
+
+
+.credit_wrapper{
+    border-top: 1px solid #d8d8d8;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: center;
+}
+.footerlink{
+    color: #3e3e3e;
+}
+
+.footerlink:hover{
+    color:red;
+}
+
+.footer_firstline{
+    font-size: 18px;
+}
+.footer_secondliine{
+    font-size: 16px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.footer_wrapper > section {
+    clear: both;
+    width: 100%;
+    padding:20px
+   
+  }
+
