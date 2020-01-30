@@ -1,12 +1,36 @@
 body{
     font-size: 16px;
-    margin:0px;
+    margin:auto;
+    max-width: 1200px;
 }
+
 main {
 	display: grid;
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
+.siteurl{
+    text-align: center;
+}
+
+
+.site_pagename, .site_category{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top:20px;
+}
+.site_category{
+font-size: 1.8em;
+font-weight: bold;
+}
+.site_pagename{
+    font-size: 1.3em;
+}
+
+
+
 section p{font-size: 1.5em;
 text-align: justify;
 padding:10px;
@@ -23,10 +47,9 @@ section{
     text-align: center;
     display: block;
     float: left;
-    margin:auto;
-    padding:auto;
-    
+    margin:auto;    
 }
+
 .footerlink{
 
     color:#ffffff;
@@ -41,7 +64,7 @@ section{
     text-align: center;
     text-transform: capitalize;
     font-size: 2em;
-    font-family: 'Caesar Dressing', cursive;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -50,7 +73,7 @@ section{
     text-align: center;
     text-transform: capitalize;
     font-size: 1em;
-    font-family: 'Caesar Dressing', cursive;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 main{
