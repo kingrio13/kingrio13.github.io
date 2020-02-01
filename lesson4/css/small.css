@@ -1,0 +1,171 @@
+
+body {
+    font-size: 16px;
+    margin:auto;
+    background-color: #ebebeb;
+    font-family: 'Merriweather', serif; 
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-rows: 180px auto auto auto;
+    grid-template-areas: 
+                        "hd" /*"mainlogo tagline"*/
+                        "navi"
+                         "main"
+                         "footer";                     
+}
+
+header{
+    grid-area: hd;
+    background-color: #22313f;
+    display: flex;
+    flex-wrap: wrap;
+    flex:auto;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#mainlogo{
+    width: 300px;
+  
+}
+
+#mainlogo img{
+    max-width: 100%;
+}
+
+#maintag{
+   text-align: center;
+   color:#fff;
+} 
+#maintag h1{
+    line-height: 1em;
+}
+.maintagline{
+    font-style: italic;
+}
+
+
+main {
+    grid-area: main;
+    width:100%;
+    max-width: 1200px;
+    display: flex;
+    margin:auto;
+}
+
+article{
+    width:100%;
+    max-width: 1200px;
+}
+
+section{
+    margin:20px;
+    border-style: dashed;
+}
+
+
+/* Navigation here */
+nav{
+    grid-area: navi;
+    background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255,0,0,0.7875525210084033) 100%, rgba(255,0,0,0.4009978991596639) 100%);}
+
+.navigation{
+    padding:0px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation li:first-child {
+	display: block;
+}
+
+.responsive li {
+	display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    display:block
+}
+
+nav ul li a:hover{
+    background: #22313f;
+}
+
+/* main content here */
+.onefourth{
+    display: block;
+    
+}
+.onefourth img{
+margin:auto;
+display: block;
+}
+
+.sectionheader{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*footer*/
+
+footer {
+    font-size: 	16px;
+    font-family: 'Merriweather', serif;
+    color:#504f4f;
+    background-color:#fff;
+    line-height: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    grid-area: footer;
+    
+    margin:auto;
+}
+
+.credit_wrapper{
+    border-top: 1px solid #d8d8d8;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    flex-basis: 100%;
+}
+.footerlink{
+    color: #3e3e3e;
+}
+
+.footerlink:hover{
+    color:red;
+}
+.footer_secondline, .footer_firstline{
+    flex-basis: 100%;
+}
+
+
+.firstrow_footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.footermap, .footercontact{
+    flex-basis: 40%;
+    padding:10px;
+}
+
+
