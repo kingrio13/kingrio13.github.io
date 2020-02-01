@@ -68,9 +68,11 @@ section{
 
 /* Navigation here */
 nav{
+    text-align: center;
     grid-area: navi;
     background: rgb(255,0,0);
-background: linear-gradient(90deg, rgba(255,0,0,0.7875525210084033) 100%, rgba(255,0,0,0.4009978991596639) 100%);}
+background: linear-gradient(90deg, rgba(255,0,0,0.7875525210084033) 100%, rgba(255,0,0,0.4009978991596639) 100%);
+}
 
 .navigation{
     padding:0px;
