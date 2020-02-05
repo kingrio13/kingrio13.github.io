@@ -77,6 +77,7 @@ nav a:hover {
 
 main{
     max-width: 1200px;
+    padding:20px;
 }
 article > section{
     margin-left: 20px;
@@ -85,7 +86,7 @@ article > section{
 
 .whitecontent{
     background:white;
-    padding:20px;
+  
     margin:20px;
 }
 .color-scheme{
@@ -96,7 +97,7 @@ article > section{
     max-width: 800px;
     display: block;
     margin: auto;
-    padding:20px
+   width:100%;
 }
 
 
@@ -178,6 +179,7 @@ text-align: left;
 
 .typography_table, .typography_table td{
     border:1px solid  #504f4f;
+    font-size: 12px;
 }
 
 .typography_table td{

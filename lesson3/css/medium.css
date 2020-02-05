@@ -6,7 +6,10 @@
         padding-right: 30px;
     }
 
-  
+    .typography_table, .typography_table td{
+      border:1px solid  #504f4f;
+      font-size: 16px;
+  }
 
     
   .footer_wrapper > section {
