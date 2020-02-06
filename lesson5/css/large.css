@@ -1,0 +1,58 @@
+@media only screen and (min-width: 60em) {
+    .navigation li {
+        display: block;}
+        
+	.navigation li:first-child {
+		display: none;
+    }
+    
+    
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    display:block
+}
+
+nav ul li a:hover,
+nav ul li  a:active {
+    background: #22313f;
+    color: #fff;
+    
+}
+
+.active{
+    background: #22313f;
+    color: #fff;
+}
+
+
+.contentimage{
+    display: flex;
+    padding:20px;
+    text-align: justify;
+}
+
+.footermap, .footercontact{
+    flex-basis: 50%;
+    
+}
+
+
+
+
+}
