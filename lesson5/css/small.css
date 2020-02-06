@@ -108,6 +108,35 @@ background-size: cover !important;
 height: 400px;
 }
 
+.weather_summary{
+    width: 400px;
+    background-color: rgba(34, 49, 63, 0.63);
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+  left: 30px;
+  color:white;
+}
+
+.weather_header{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 15px;
+    display: block;
+
+}
+.weather_info_wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.weather_info_row1{
+    text-align: right;
+}
+.weather_info_row2{
+    margin-left: 10px;
+}
 
 .onefourth{
     display: block;
@@ -172,7 +201,10 @@ footer {
     
 }
 
-.footermap, .footercontact{
+.footermap{
+    display: none;
+}
+.footercontact{
     flex-basis: 100%;
     margin-bottom: 20px;
     

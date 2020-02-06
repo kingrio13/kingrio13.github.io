@@ -51,7 +51,9 @@ nav ul li  a:active {
     flex-basis: 50%;
     
 }
-
+.footermap{
+    display:block;
+}
 
 
 
