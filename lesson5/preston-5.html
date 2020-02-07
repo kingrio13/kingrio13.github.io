@@ -17,9 +17,19 @@
 
         <script src="../js/modified.js" defer></script>
         <script src="js/menujs.js" defer></script>
+        <script src="js/forecast.js" defer></script>
+        <script src="js/fridaymadness.js" defer></script>
 
     
     </head><body>
+
+
+        <aside>
+            <div class="banner_reminder" id="fridaybanner">
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            </div>
+        </aside>
+
         <header>
             
                 <div id="mainlogo"><img src="images/logo-optimized.png" alt="main logo"></div>
@@ -28,6 +38,8 @@
                     <span class="maintagline">Weather you Like it or Not</span>    
                 </div>
         </header>
+
+
         
         <nav>
             <ul class="navigation">
@@ -52,18 +64,58 @@
                                 <div class="weather_info_row1">Currently:</div>
                                 <div class="weather_info_row2">Sunny</div>
 
-                                <div class="weather_info_row1">Currently:</div>
-                                <div class="weather_info_row2">Sunny</div>
+                                <div class="weather_info_row1">Wind Chil:</div>
+                                <div class="weather_info_row2">F</div>
 
-                                <div class="weather_info_row1">Currently:</div>
-                                <div class="weather_info_row2">Sunny</div>
+                                <div class="weather_info_row1">Humidity:</div>
+                                <div class="weather_info_row2">69%</div>
+
+                                <div class="weather_info_row1">Wind Speed:</div>
+                                <div class="weather_info_row2">5mp</div>
                         </div>    
 
                    
                </section>
 
                <section class="forecast">
-                   5 Day Forecast
+                            <div class="section_header">5 day Forecast</div>    
+                            <div class="forecastflex">
+                                <div class="col">
+                                    <span class="forecastlabel">1</span>
+                                    <img src="images/sunny.png" alt="Sunny">
+                                    <span class="forecastflexdata">Sunny</span>
+                                </div>
+
+                                <div class="col">
+                                    <span class="forecastlabel">2</span>
+                                    <img src="images/sunny.png" alt="Sunny">
+                                    <span class="forecastflexdata">Sunny</span>
+                                </div>
+
+
+                                <div class="col">
+                                    <span class="forecastlabel">3</span>
+                                    <img src="images/sunny.png" alt="Sunny">
+                                    <span class="forecastflexdata">Sunny</span>
+                                </div>
+
+
+                                <div class="col">
+                                    <span class="forecastlabel">4</span>
+                                    <img src="images/sunny.png" alt="Sunny">
+                                    <span class="forecastflexdata">Sunny</span>
+                                </div>
+
+                                
+                                <div class="col">
+                                    <span class="forecastlabel">5</span>
+                                    <img src="images/sunny.png" alt="Sunny">
+                                    <span class="forecastflexdata">Sunny</span>
+                                </div>
+
+
+
+                            </div>    
                </section>
 
                <section class="contentimage">

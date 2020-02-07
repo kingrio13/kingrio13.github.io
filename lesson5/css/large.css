@@ -1,4 +1,23 @@
 @media only screen and (min-width: 60em) {
+    .weather_summary{
+        width: 400px;
+        border-radius: 10px;
+        position: relative;
+        display: inline-block;
+        top: 30px;
+      left: 30px;
+      color:white;
+      max-height: 250px;
+      height: 100%;
+    }
+
+    .footer_header{
+        width:80%;
+    }
+
+    section{
+        padding-bottom: 40px;
+    }
     .navigation li {
         display: block;}
         
@@ -43,10 +62,12 @@ nav ul li  a:active {
 
 .contentimage{
     display: flex;
-    padding:20px;
     text-align: justify;
 }
 
+.footercontact{
+    text-align: left;
+}
 .footermap, .footercontact{
     flex-basis: 50%;
     
@@ -54,6 +75,60 @@ nav ul li  a:active {
 .footermap{
     display:block;
 }
+
+.footer_firstline{
+    font-size: 1.2rem;
+}
+
+.forecastflex {
+	display: flex;
+	flex-direction: row;
+}
+.forecastflexdata {
+	display: block;
+	padding: 0 5px 5px;
+}
+
+.col {
+	flex: 1 1 100%;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	
+	font-size: 13px;
+	text-align: center;
+}
+
+.forecastflex div:last-child {
+	border-right: 1px solid #333;
+}
+
+.forecastlabel {
+	display: block;
+	padding: 5px;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 1px solid #22313f;
+    background-color: #22313f;
+    color:white;
+}
+
+.forecastflex div img, table img {
+	border-radius: 100px;
+	padding: 5px;
+}
+
+
+.section_header{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 15px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
 
 
 

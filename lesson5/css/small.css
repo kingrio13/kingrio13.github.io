@@ -6,12 +6,31 @@ body {
     font-family: 'Merriweather', serif; 
     line-height: 1.5rem;
     display: grid;
-    grid-template-rows: 180px auto auto auto;
+    grid-template-rows: auto 180px auto auto auto;
     grid-template-areas: 
+                        "aside"
                         "hd" /*"mainlogo tagline"*/
                         "navi"
                          "main"
                          "footer";                     
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-wrap: wrap;
+    flex:auto;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner_reminder{
+    text-align: center;
+    width: 100%;
+    padding:20px;
+    background-color: #fff;
 }
 
 header{
@@ -58,10 +77,13 @@ main {
 article{
     width:100%;
     max-width: 1200px;
+    padding:20px;
+    
 }
 
 section{
     margin:20px;
+    padding-bottom: 20px;
     
 }
 
@@ -85,6 +107,13 @@ nav{
 	display: block;
 }
 
+
+.navigation .changex{
+    content: "wew";
+
+}
+
+
 .responsive li {
 	display: block;
 }
@@ -107,23 +136,27 @@ background:url("../images/banner.jpg");
 background-size: cover !important;
 height: 400px;
 }
-
-.weather_summary{
-    width: 400px;
-    background-color: rgba(34, 49, 63, 0.63);
-    border-radius: 10px;
-    height: 300px;
+.weather_summary {
+    width: 300px;
     position: relative;
-    top: 30px;
-  left: 30px;
-  color:white;
+    color: white;
+    display: block;
+    margin: auto;
+    top: 10%;
+    background-color: rgba(34, 49, 63, 0.63);
+    height: auto;
+    padding-bottom: 20px;
 }
+
+
 
 .weather_header{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-top: 15px;
     display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
 
 }
 .weather_info_wrapper{
@@ -133,10 +166,21 @@ height: 400px;
 
 .weather_info_row1{
     text-align: right;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 .weather_info_row2{
     margin-left: 10px;
+    color:#ebebeb;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
 }
+
+.forecastflex{
+    display: none;
+}
+
 
 .onefourth{
     display: block;
@@ -191,6 +235,10 @@ footer {
     flex-basis: 100%;
 }
 
+.footer_firstline{
+    font-size: .9rem;
+}
+
 
 .firstrow_footer{
     display: flex;
@@ -207,6 +255,7 @@ footer {
 .footercontact{
     flex-basis: 100%;
     margin-bottom: 20px;
+    text-align: center;
     
 }
 
@@ -216,7 +265,7 @@ footer {
 .footer_header{
     font-size: 1.2rem;
     clear:both;
-    width:80%;
+    width:100%;
     display:block;
     margin-bottom: 10px;
     border-bottom: 1px solid #d8d8d8;
