@@ -80,6 +80,10 @@ nav ul li  a:active {
     font-size: 1.2rem;
 }
 
+.forecast{
+    display: block;
+}
+
 .forecastflex {
 	display: flex;
 	flex-direction: row;
@@ -130,6 +134,7 @@ nav ul li  a:active {
 
 .onefourth img{
     padding: 20px;
+    width: auto;
     max-height: 300px;
 }
 
