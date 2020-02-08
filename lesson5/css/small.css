@@ -184,7 +184,7 @@ height: 400px;
 .contentimage{
     display: flex;
   
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .onethird{
