@@ -133,12 +133,16 @@ nav ul li  a:active {
     font-weight: bold;
 }
 
-.onefourth img{
+.onefourth :first-child {
     padding: 20px;
     width: auto;
     max-height: 300px;
+    display: block;
 }
 
+.onefourth :nth-child(2){
+    display: none;
+}
 
 
 

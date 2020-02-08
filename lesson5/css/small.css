@@ -195,11 +195,20 @@ height: 400px;
     display: block;
     
 }
+.onefourth :last-child{
+    display: block;
+}
+
+
 .onefourth img{
 margin:auto;
 display: block;
 width: 100%;
 height: auto;
+}
+
+.onefourth img{
+    display: none;
 }
 
 .sectionheader{

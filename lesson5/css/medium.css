@@ -1,0 +1,16 @@
+@media only screen and (min-width: 37.5em) {
+  
+    .onefourth :nth-child(2) {
+        width:100%;
+        display: block;
+    }
+    
+
+    .onefourth :nth-child(3),.onefourth :first-child {
+        display: none;
+    }
+    
+    
+  
+            
+}
