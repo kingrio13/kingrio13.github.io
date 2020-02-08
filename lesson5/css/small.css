@@ -181,6 +181,15 @@ height: 400px;
     display: none;
 }
 
+.contentimage{
+    display: flex;
+  
+    flex-direction: column-reverse;
+}
+
+.onethird{
+    margin-top:30px;
+}
 
 .onefourth{
     display: block;

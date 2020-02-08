@@ -11,12 +11,12 @@ var forecastlabel=document.getElementsByClassName('forecastlabel');
 
 for(var x=0; x<5; x++){
     if( n <= 6){
-        console.log(weekday[n])
+        //console.log(weekday[n])
         forecastlabel[x].innerHTML=weekday[n];
     n++;
     }else{
         n=0;
-        console.log(weekday[n])
+        //console.log(weekday[n])
         forecastlabel[x].innerHTML=weekday[n];
         n++;
     }

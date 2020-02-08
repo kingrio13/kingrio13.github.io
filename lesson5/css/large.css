@@ -63,6 +63,7 @@ nav ul li  a:active {
 .contentimage{
     display: flex;
     text-align: justify;
+    flex-direction:row;
 }
 
 .footercontact{
