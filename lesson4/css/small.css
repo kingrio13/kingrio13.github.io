@@ -65,6 +65,9 @@ section{
     margin:20px;
     border-style: dashed;
 }
+.footer_firstline{
+    font-size: .9rem;
+}
 
 
 /* Navigation here */
