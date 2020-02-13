@@ -61,6 +61,14 @@
                <h2>Home</h2> 
 
                <section class="slider">
+
+                <picture class="picslider">
+                    <source media="(min-width: 60em)" srcset="images/cit230_large.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/cit230_medium.jpg">
+                    <img src="images/cit230_small.jpg" alt="small Banner">
+                </picture>
+
+
                    <div class="weather_summary">
                         <span class="weather_header">Weather Summary</span>
                         <div class="weather_info_wrapper">
@@ -127,9 +135,14 @@
                    </div>
 
                    <div class="onefourth">
-                        <img src="images/smallbanner-large.jpg" alt="small Banner">
-                        <img src="images/smallbanner-medium.jpg" alt="small Banner">
-                        <img src="images/smallbanner-small.jpg" alt="small Banner">
+
+                        <picture>
+                            <source media="(min-width: 37.5em)" srcset="images/smallbanner-medium.jpg">
+                            <source media="(min-width: 60em)" srcset="images/smallbanner-large.jpg">
+                            <img src="images/smallbanner-small.jpg" alt="small Banner">
+
+                        </picture>
+                        
                    </div>
                </section>
 

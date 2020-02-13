@@ -131,18 +131,31 @@ nav ul li a:hover{
 }
 
 /* main content here */
+/* this is for slider */
+/* .slider{
+ background:url("../images/banner.jpg");
+background-size: cover !important; 
+width: 100%;
+} */
+
+/* main content here */
 .slider{
-background:url("../images/banner.jpg");
-background-size: cover !important;
-height: 400px;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    }
+
+    
+
+.picslider img, .picslider source {
+    width: 100%;
 }
 .weather_summary {
     width: 300px;
     position: relative;
-    color: white;
+    color: rgb(202, 202, 202);
     display: block;
     margin: auto;
-    top: 10%;
     background-color: rgba(34, 49, 63, 0.63);
     height: auto;
     padding-bottom: 20px;
@@ -192,24 +205,12 @@ height: 400px;
     text-align: justify;
 }
 
-.onefourth{
-    display: block;
-    
-}
-.onefourth :last-child{
-    display: block;
-}
-
 
 .onefourth img{
 margin:auto;
 display: block;
 width: 100%;
 height: auto;
-}
-
-.onefourth img{
-    display: none;
 }
 
 .sectionheader{

@@ -1,14 +1,10 @@
 @media only screen and (min-width: 37.5em) {
   
-    .onefourth :nth-child(2) {
-        width:100%;
-        display: block;
+    .weather_summary{
+        top: -250px;
     }
-    
 
-    .onefourth :nth-child(3),.onefourth :first-child {
-        display: none;
-    }
+  
     
     
   

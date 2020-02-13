@@ -4,8 +4,8 @@
         border-radius: 10px;
         position: relative;
         display: inline-block;
-        top: 30px;
-      left: 30px;
+        top: -440px;
+        left:30px;
       color:white;
       max-height: 250px;
       height: 100%;
@@ -133,16 +133,11 @@ nav ul li  a:active {
     font-weight: bold;
 }
 
-.onefourth :first-child {
+.onefourth{
+    margin: auto;
     padding: 20px;
-    width: auto;
-    max-height: 300px;
-    display: block;
 }
 
-.onefourth :nth-child(2), .onefourth :nth-child(3){
-    display: none;
-}
 
 
 
