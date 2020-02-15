@@ -3,12 +3,11 @@
 
 var f; 
 var temperature=parseInt(document.getElementById("temperature").innerText);
+
 var speed=parseInt(document.getElementById("windspeed").innerText);
+
 //speed=2;
 ///temperature=51;
-const spower=0.16;
-const farenh=35.74;
-const tempsped=0.4275;
 // console.log(temperature);
 // console.log(speed);
 
@@ -19,12 +18,14 @@ const tempsped=0.4275;
 
 if(temperature <= 50 && speed >= 3){
   //f=35.74+0.6215t-35.75s0.16+0.4275ts0.16
-
-  f= (farenh+(spower*temperature))-(farenh*Math.pow(speed,spower))+tempsped*temperature*Math.pow(speed,spower);
-  console.log(f);
+  f=35.74+.6215*temperature-35.75*Math.pow(speed,.16)+.4275*temperature*Math.pow(speed,.16)
+  //console.log(f);
 document.getElementById("windF").innerHTML = f.toFixed(2) + " &#8457;";
 
 } else {
    document.getElementById("windF").innerText = "N/A" 
 
 }
+
+
+
