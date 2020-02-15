@@ -10,17 +10,20 @@
         
         
         <link rel="shortcut icon" href="../favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7cMerriweather&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    
+       
         <link href="css/small.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet"> 
         <link href="css/large.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
         <script src="../js/modified.js" defer></script>
         <script src="js/menujs.js" defer></script>
         <script src="js/forecast.js" defer></script>
+         <script src="js/windchill.js" defer></script>
         <script src="js/fridaymadness.js" defer></script>
 
         
@@ -61,30 +64,35 @@
                <h2>Home</h2> 
 
                <section class="slider">
+                    <div class="banner_container">
+                        <picture class="picslider">
+                            <source media="(min-width: 60em)" srcset="images/cit230_large.jpg">
+                            <source media="(min-width: 37.5em)" srcset="images/cit230_medium.jpg">
+                            <img src="images/cit230_small.jpg" alt="small Banner">
+                        </picture>
 
-                <picture class="picslider">
-                    <source media="(min-width: 60em)" srcset="images/cit230_large.jpg">
-                    <source media="(min-width: 37.5em)" srcset="images/cit230_medium.jpg">
-                    <img src="images/cit230_small.jpg" alt="small Banner">
-                </picture>
+
+                    <div class="weather_summary">
+                            <span class="weather_header">Weather Summary</span>
+                            <div class="weather_info_wrapper">
+                                    <div class="weather_info_row1">Currently:</div>
+                                    <div class="weather_info_row2">Sunny</div>
+                                    
+                                    <div class="weather_info_row1">High:</div>
+                                    <div class="weather_info_row2" id="windF"></div>
 
 
-                   <div class="weather_summary">
-                        <span class="weather_header">Weather Summary</span>
-                        <div class="weather_info_wrapper">
-                                <div class="weather_info_row1">Currently:</div>
-                                <div class="weather_info_row2">Sunny</div>
+                                    <div class="weather_info_row1">Wind Chil:</div>
+                                    <div class="weather_info_row2" id="temperature">22 &#8457;</div>
 
-                                <div class="weather_info_row1">Wind Chil:</div>
-                                <div class="weather_info_row2">22 &#8457;</div>
+                                    <div class="weather_info_row1">Humidity:</div>
+                                    <div class="weather_info_row2" id="humidity">69%</div>
 
-                                <div class="weather_info_row1">Humidity:</div>
-                                <div class="weather_info_row2">69%</div>
-
-                                <div class="weather_info_row1">Wind Speed:</div>
-                                <div class="weather_info_row2">5mp</div>
-                        </div> 
-                    </div>       
+                                    <div class="weather_info_row1">Wind Speed:</div>
+                                    <div class="weather_info_row2" id="windspeed">5mp</div>
+                            </div> 
+                        </div>  
+                     </div> <!--banner container        -->
                </section>
 
                <section class="forecast">
@@ -184,5 +192,16 @@
                     <div class="footer_secondline" id="lastupdated"></div>
                 </div>
         </footer>
+
+        <!-- https://fonts.googleapis.com/css?family=Josefin+Sans%7cMerriweather&display=swap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+        <script>
+            WebFont.load({
+              google: {
+                families: ['Merriweather']
+              }
+            });
+          </script>
     </body>
     </html>

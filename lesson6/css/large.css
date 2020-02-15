@@ -2,10 +2,10 @@
     .weather_summary{
         width: 400px;
         border-radius: 10px;
-        position: relative;
+        position: absolute;
         display: inline-block;
-        top: -440px;
-        left:30px;
+        top: 390px;
+        left: 15%;
       color:white;
       max-height: 250px;
       height: 100%;

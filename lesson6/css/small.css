@@ -139,10 +139,8 @@ width: 100%;
 } */
 
 /* main content here */
-.slider{
-    width: auto;
-    height: 400px;
-    overflow: hidden;
+.banner_container{
+  width: 100%;
     }
 
     
@@ -152,13 +150,15 @@ width: 100%;
 }
 .weather_summary {
     width: 300px;
-    position: relative;
+    position: absolute;
     color: rgb(202, 202, 202);
     display: block;
     margin: auto;
     background-color: rgba(34, 49, 63, 0.63);
     height: auto;
-    padding-bottom: 20px;
+    top: 355px;
+    left: 10%;
+    
 }
 
 

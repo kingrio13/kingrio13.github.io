@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans%7cMerriweather&display=swap'); */
+
+@media only screen and (min-width: 81.25em) {
+    .weather_summary{
+        width: 400px;
+        border-radius: 10px;
+        position: absolute;
+        display: inline-block;
+        top: 390px;
+        left: 25%;
+      color:white;
+      max-height: 250px;
+      height: 100%;
+    }
+
+
+}

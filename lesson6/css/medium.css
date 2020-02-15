@@ -1,7 +1,9 @@
 @media only screen and (min-width: 37.5em) {
   
     .weather_summary{
-        top: -250px;
+        top: 370px;
+        left: 15%;
+        position: absolute;
     }
 
   
