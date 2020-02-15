@@ -18,7 +18,8 @@ body{
     text-align: center;
     text-transform: capitalize;
     font-size: 2em;
-    font-family: 'Caesar Dressing', cursive;;
+    /* font-family: 'Caesar Dressing', cursive; */
+    font-family: 'Merriweather', serif;
 }
 
 main{
