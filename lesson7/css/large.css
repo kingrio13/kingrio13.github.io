@@ -139,7 +139,16 @@ nav ul li  a:active {
 }
 
 
+  
+ /* Gallery page css    */
+ .gallery_container{
+    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+    width: 100%;
+    transition: all 1s;
+    
+ }
 
+ .gallery_container img:hover {box-shadow: 0 0 50px #333;}
 
 
 }

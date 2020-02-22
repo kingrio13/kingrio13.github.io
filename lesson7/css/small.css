@@ -108,10 +108,7 @@ nav{
 }
 
 
-.navigation .changex{
-    /* content: "wew"; */
 
-}
 
 
 .responsive li {
@@ -319,4 +316,38 @@ font-size: 2.2rem;
     color: rgba(255,0,0,.8);
     
     }
+
+
+
+ /* Gallery page css    */
+
+ .gallery_container{
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     grid-template-columns: auto;
+ }
+
+ .gallery_col{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
  
+ .gallery_col figcaption{
+     text-align: left;
+     width: 100%;
+ }
+
+ 
+ .appear {
+	opacity: 1;
+  }
+  .gal7 {
+	opacity: 0;
+    transition: opacity 250ms ease-in; 
+  }
+  
+  .gal7.appear{
+	opacity: 1;
+  }
