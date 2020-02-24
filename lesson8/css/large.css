@@ -1,0 +1,154 @@
+@media only screen and (min-width: 60em) {
+    .weather_summary{
+        width: 400px;
+        border-radius: 10px;
+        position: absolute;
+        display: inline-block;
+        top: 390px;
+        left: 15%;
+      color:white;
+      max-height: 250px;
+      height: 100%;
+    }
+
+    .footer_header{
+        width:80%;
+    }
+
+    section{
+        padding-bottom: 40px;
+    }
+    .navigation li {
+        display: block;}
+        
+	.navigation li:first-child {
+		display: none;
+    }
+    
+    
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    display:block
+}
+
+nav ul li a:hover,
+nav ul li  a:active {
+    background: #22313f;
+    color: #fff;
+    
+}
+
+.active{
+    background: #22313f;
+    color: #fff;
+}
+
+
+.contentimage{
+    display: flex;
+    text-align: justify;
+    flex-direction:row;
+}
+
+.footercontact{
+    text-align: left;
+}
+.footermap, .footercontact{
+    flex-basis: 50%;
+    
+}
+.footermap{
+    display:block;
+}
+
+.footer_firstline{
+    font-size: 1.2rem;
+}
+
+.forecast{
+    display: block;
+}
+
+.forecastflex {
+	display: flex;
+	flex-direction: row;
+}
+.forecastflexdata {
+	display: block;
+	padding: 0 5px 5px;
+}
+
+.col {
+	flex: 1 1 100%;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	
+	font-size: 13px;
+	text-align: center;
+}
+
+.forecastflex div:last-child {
+	border-right: 1px solid #333;
+}
+
+.forecastlabel {
+	display: block;
+	padding: 5px;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 1px solid #22313f;
+    background-color: #22313f;
+    color:white;
+}
+
+.forecastflex div img, table img {
+	border-radius: 100px;
+	padding: 5px;
+}
+
+
+.section_header{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 15px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.onefourth{
+    margin: auto;
+    padding: 20px;
+}
+
+
+  
+ /* Gallery page css    */
+ .gallery_container{
+    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+    width: 100%;
+    transition: all 1s;
+    
+ }
+
+ .gallery_container img:hover {box-shadow: 0 0 50px #333;}
+
+
+}
