@@ -12,14 +12,10 @@ table, table td{
     border:1px solid  rgb(189, 196, 212);
 }
 
-table thead:first-child{
-    font-weight: 800;
+table thead{
     font-size: 2em;
 }
-
-
-
-table tfoot:last-child{
+table tfoot{
    font-size: 14px;
 }
 table .table_italic{
@@ -46,7 +42,7 @@ table tr td.table_highlight{
 
 
 
-table td{
+table td, table th{
     padding:10px;
 }
 
