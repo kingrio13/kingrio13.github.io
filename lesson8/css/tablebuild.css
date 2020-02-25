@@ -1,43 +1,42 @@
-.w8_table{
+table{
     padding:0px;
     border-collapse: collapse;
-    width: 100%;
     font-size: 16px;
     text-align: center;
     font-family:  Ubuntu, sans-serif;
   }
 
-.w8_table, .w8_table td{
+table, table td{
     border:1px solid  rgb(189, 196, 212);
 }
 
-.w8_table thead:first-child{
+table thead:first-child{
     font-weight: 800;
     font-size: 2em;
 }
 
 
 
-.w8_table tfoot:last-child{
+table tfoot:last-child{
    font-size: 14px;
 }
-.w8_table .table_italic{
+table .table_italic{
     font-style: italic;
 }
 
-.w8_table th, .w8_table tfoot td{
+table th, table tfoot td{
     background: #7fb9c2;
 }
 
 
-.w8_table .table_title{
+table .table_title{
     background:  #628ca6;
     /* color:#e7f0ed; */
     color:white;
     font-weight: 700;
     font-size: 18px;
 }
-.w8_table .table_highlight{
+table .table_highlight{
     background:  #628ca6;
     color:white;
 }
@@ -49,12 +48,12 @@
 
 
 
-.w8_table td{
+table td{
     padding:10px;
 }
 
 /* 
 //#e7f0ed
 //#e7ffed */
-.w8_table tr:nth-child(odd) {  background:#e7f0ed;}
-.w8_table tr:nth-child(even) {  background:#e7ffed;}
+table tr:nth-child(odd) {  background:#e7f0ed;}
+table tr:nth-child(even) {  background:#e7ffed;}
