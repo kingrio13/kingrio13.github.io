@@ -57,6 +57,6 @@ table tbody :first-child{
 font-weight: 700;
 }
 
-table tbody :nth-child(6){
+table tbody :nth-child(6) :nth-child(1){
     font-style: italic;
 }
