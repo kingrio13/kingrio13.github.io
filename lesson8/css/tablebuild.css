@@ -8,15 +8,15 @@
   }
 
 .w8_table, .w8_table td{
-    border:1px solid  #504f4f;
-    background:#e7f0ed;
-   
+    border:1px solid  rgb(189, 196, 212);
 }
 
 .w8_table thead:first-child{
     font-weight: 800;
     font-size: 2em;
 }
+
+
 
 .w8_table tfoot:last-child{
    font-size: 14px;
@@ -43,7 +43,7 @@
 }
 
 .table_colspan{
-    background:  #628ca6;
+  
     text-align: center;
 }
 
@@ -52,3 +52,9 @@
 .w8_table td{
     padding:10px;
 }
+
+/* 
+//#e7f0ed
+//#e7ffed */
+.w8_table tr:nth-child(odd) {  background:#e7f0ed;}
+.w8_table tr:nth-child(even) {  background:#e7ffed;}
