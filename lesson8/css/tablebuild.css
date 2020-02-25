@@ -49,5 +49,14 @@ table td, table th{
 /* 
 //#e7f0ed
 //#e7ffed */
-/* table tr:nth-child(odd) {  background:#e7f0ed;} */
-table tr:nth-child(even) {  background:#e7ffed;}
+ 
+/* table tr:nth-child(even) {   background:#e7f0ed;} */
+table tr:nth-child(odd) { background:#e7ffed;}
+
+table tbody :first-child{
+font-weight: 700;
+}
+
+table tbody :nth-child(6){
+    font-style: italic;
+}
