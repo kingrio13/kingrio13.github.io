@@ -3,10 +3,16 @@ table{
     border-collapse: collapse;
     font-size: 16px;
     text-align: center;
-    font-family:  'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     box-shadow: 10px 10px 15px #628ca6;
     background:#e7f0ed;
   }
+
+  table, td, tr, th{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
 
 table, table td{
     border:1px solid  rgb(189, 196, 212);
@@ -30,8 +36,12 @@ table th, table tfoot td{
 table tr td.table_highlight{
     background:  #628ca6;
     color:white;
-    
+    font-weight:bolder;
     font-size: 18px;
+}
+table tbody :nth-child(5) :nth-child(3){
+
+    background:  #628ca6;
 }
 
 
@@ -53,9 +63,6 @@ table td, table th{
 /* table tr:nth-child(even) {   background:#e7f0ed;} */
 table tr:nth-child(odd) { background:#e7ffed;}
 
-table tbody :first-child{
-font-weight: 700;
-}
 
 table tbody :nth-child(6) :nth-child(1){
     font-style: italic;

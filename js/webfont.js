@@ -1,6 +1,6 @@
 
  WebFont.load({
    google: {
-     families: ['Merriweather','Caesar Dressing']
+     families: ['Merriweather','Caesar Dressing', 'Ubuntu','sans-serif']
    }
  });
