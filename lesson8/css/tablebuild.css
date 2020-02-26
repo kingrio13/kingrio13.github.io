@@ -42,6 +42,7 @@ table tr td.table_highlight{
 table tbody :nth-child(5) :nth-child(3){
 
     background:  #628ca6;
+    color:white;
 }
 
 
