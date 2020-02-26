@@ -20,12 +20,10 @@
         <link href="css/large.css" rel="stylesheet">
         
 
-
-        <script src="js/gallery7-lazyload.js" defer></script>
         <script src="../js/modified.js" defer></script>
         <script src="js/menujs.js" defer></script>
         <script src="js/fridaymadness.js" defer></script>
-
+        <script src="js/rating.js"></script>
         
     </head><body>
 
@@ -54,91 +52,59 @@
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li class="active"><a href="gallery-8.html">Gallery</a></li>
+                <li  class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
             </ul>
         </nav>
         
         <main>
             <article>
-               <h2>Gallery</h2> 
+               <h2>Storm Center</h2> 
 
 
-               <section class="gallery_container">
+                <div class="form_container">
+                    <form>
+                        <label>Full Name</label>
+                        <input type="name" name="fullname" id="fullname" required pattern="[a-zA-Z-.]{5,}]">
 
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/cloudy.jpg" alt="Cloudy" class="gal7">
-                                <figcaption>Cloudy</figcaption>
-                            </figure>
-                        </div>
-                         
+                        <label>Email</label>
+                        <input type="email" name="uemail" id="uemail" placeholder="kingrio.miranda@gmail.com">
+
+                        <label>Phone Number</label>
+                        <input type="tel" id="uphone" name="uphone" required>
+
+                        <label>Zip Code</label>
+                        <input type="number" id="uzip" name="uzip" required>
+
+                        <label>Storm Date</label>
+                        <input type="date" id="stormdate" name="stormdate">
+
+                        <label>Storm type</label>
+                        <input name="stormtype" list="stormlist">
+                        <datalist id="stormlist">
+                            <option>Flash Flood</option>
+                            <option>Hail</option>
+                            <option>Huricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                        </datalist>
+
+                        <label>Storm Severity</label>
+                        <input type="range" id="stormrating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="stormratingvalue">5</span>
                         
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/fall.jpg" alt="Fall" class="gal7">
-                                <figcaption>Fall</figcaption>
-                            </figure>
-                        </div>
+                        <label>User in-danger Level</label>
+                        <label><input type="radio" id="indangeryes" name="indanger" value="Yes">Yes</label>
+                        <label><input type="radio" id="indangerno" name="indanger" value="No" checked>No</label>
 
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/foggy.jpg" alt="Foggy" class="gal7">
-                                <figcaption>Foggy</figcaption>
-                            </figure>
-                        </div>
-
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/lightning.jpg" alt="thunderstorm" class="gal7">
-                                <figcaption>Thunderstorm</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/rainy.jpg" alt="Rainy" class="gal7">
-                                <figcaption>Rainy</figcaption>
-                            </figure>
-                        </div>
-
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/snowy.jpg" alt="snow" class="gal7">
-                                <figcaption>Snowy</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/spring.jpg" alt="Spring" class="gal7">
-                                <figcaption>Spring</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/sunny.jpg" alt="sunny" class="gal7">
-                                <figcaption>Sunny</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="gallery_col">
-                            <figure>
-                                <img src="images/gallery/placeholder.png" data-src="images/gallery/windy.jpg" alt="windy" class="gal7">
-                                <figcaption>Windy</figcaption>
-                            </figure>
-                        </div>
+                        
+                        <label>Additional Information or Comments</label>
+                        <textarea ></textarea>
 
 
 
-
-               </section>
-
-
+                    </form>        
+                </div>
 
             </article>
         </main>
