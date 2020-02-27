@@ -97,8 +97,8 @@
                         
 
                         <div class="form_set">        
-                            <label for="stormlist">Storm type</label>
-                            <input name="stormtype" list="stormlist">
+                            <label for="stormtype">Storm type</label>
+                            <input id="stormtype" name="stormtype" list="stormlist">
                             <datalist id="stormlist">
                                 <option>Flash Flood</option>
                                 <option>Hail</option>
@@ -110,9 +110,10 @@
 
 
                         <div class="form_set">        
+                            
                             <label for="stormrating">Storm Severity</label>
                             <div class="gridgroup">
-                                <input type="range" id="stormrating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <input type="range" id="stormrating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                                 <span id="stormratingvalue">5</span>
                             </div>
                         </div>
@@ -131,10 +132,10 @@
 
 
                         <div class="form_set form_adjust">        
-                            <label for="indanger">User in-danger Level</label>
-                            <div class="gridgroup">
+                            <label>User in-danger Level</label>
+                            <div class="gridgroup" id="indanger">
                                 <input type="radio" id="indangeryes" name="indanger" value="Yes"><span>Yes</span>
-                                <input type="radio" id="indangeryes" name="indanger" value="Maybe"><span>Maybe</span>
+                                <input type="radio" id="indangermaybe" name="indanger" value="Maybe"><span>Maybe</span>
                                 <input type="radio" id="indangerno" name="indanger" value="No" checked><span>No</span>
                             </div>
                         </div>
@@ -142,17 +143,12 @@
 
                         <div class="form_set">        
                         <label for="ucomment">Additional Information or Comments</label>
-                        <textarea name="ucomment" name="ucomment"></textarea>
+                        <textarea id="ucomment" name="ucomment"></textarea>
                         </div>
                     
                         <div class="form_set">
                             <input id="usubmit" type="submit">
                         </div>
-
-                        
-
-                    </div>
-                    
                     </form>        
                 </div>
 
