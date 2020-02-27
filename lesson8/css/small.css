@@ -351,3 +351,76 @@ font-size: 2.2rem;
   .gal7.appear{
 	opacity: 1;
   }
+
+ /* Stormcenter forms */
+ 
+ .form_set{
+    display: grid;
+    grid-template-columns:minmax(1em, 1fr) minmax(1em, 3fr);
+    justify-content: center;
+    grid-gap: 2em;
+    align-items: center;
+    padding:5px;
+ }
+
+ .form_set label{
+    grid-column: 1 / 2;
+ }
+
+ .form_set input, .form_set datalist, .form_set button {
+    grid-column: 2 / 2;
+ }
+
+ #stormratingvalue{
+     padding-left: 10px;
+     font-size: 18px;
+ }
+  
+ .form_set input, .form_set datalist, .form_set select{
+     padding:10px;
+ }
+
+ .form_set input[type=range]{
+     padding:0px;
+     width: 80%;
+ }
+
+ .form_set input[type=radio]{
+    width: 20px;
+    height: 20px;
+ }
+.form_set textarea{
+    height: 200px;
+}
+
+
+ .form_set.form_adjust{
+     grid-row-gap: 0em;
+ }
+ .gridgroup{
+     display: flex;
+     align-content: center;
+ }
+
+
+ .gridgroup span{
+     padding-right: 10px;
+     align-content: center;
+ }
+ .form_set input[type=submit] {
+     padding:20px;
+     cursor: pointer;
+     background-color: #22313f;
+     border: 1px solid #333;
+     color:#fff;
+ }
+
+ .form_set input[type=submit]:hover{
+     background:#22313fc9;
+     border:1px solid red;
+ }
+
+
+.form_set input, .form_set textarea{
+    border:1px solid  rgb(189, 196, 212);
+}
