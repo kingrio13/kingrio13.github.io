@@ -25,7 +25,8 @@
         <script src="js/fridaymadness.js" defer></script>
         <script src="js/rating.js"></script>
         <script src="js/importantjs.js"></script>
-        <script src="js/formcheck.js" defer></script>
+        <!-- <script src="js/formcheck.js" defer></script> -->
+        
         
     </head><body>
 
@@ -68,7 +69,7 @@
 
                     <!-- <form method="POST" id="stormform" action="thankyou.html"> -->
                        <!-- removed for js to work  -->
-                    <form id="stormform">
+                    <form id="stormform" method="GET" action="thankyou.html">
                         <div class="form_set">
                             <label for="fullname">Full Name</label> 
                             <input type="text" name="fullname" id="fullname" pattern="[a-zA-Z\.\- ]{5,}" required title="Please check the name you inputted!" autofocus>
