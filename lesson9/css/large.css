@@ -151,8 +151,9 @@ nav ul li  a:active {
  .gallery_container img:hover {box-shadow: 0 0 50px #333;}
 
 
-
- /* Stormcenter forms */
-
+/* /hompage form */
+.towns{
+grid-template-columns:repeat(3, 1fr);
+}
 
 }

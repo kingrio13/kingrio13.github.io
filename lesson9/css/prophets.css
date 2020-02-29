@@ -23,17 +23,20 @@ section{
     margin:auto;
     background-color: #B9B9CC;
     border:1px solid #6868e6eb;
-    
+}
 
+.cards section{
+    background-color: #B9B9CC;
 }
 
 section img{
     /* width: 100%; */
-    max-height: 300px;
+    min-height: 200px;
     display: block;
-    margin:auto;
-    margin-top:20px;
+    margin: auto;
+    margin-top: 20px;
     box-shadow: 0px 0px 15px #333;
+    height: 240px;
    
 }
 

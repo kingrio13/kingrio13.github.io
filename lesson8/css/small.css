@@ -424,3 +424,7 @@ font-size: 2.2rem;
 .form_set input, .form_set textarea{
     border:1px solid  rgb(189, 196, 212);
 }
+
+.form_set input::placeholder{
+    font-style: italic;
+}
