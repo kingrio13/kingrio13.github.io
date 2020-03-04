@@ -427,25 +427,42 @@ font-size: 2.2rem;
 
 /* homepage */
 .towns{
-margin-top: 20px;    
-display: grid;
-grid-template-columns: repeat(3,1fr);
-justify-content: stretch;
-align-items: center;
-grid-gap: 20px;
-align-items: center;
-grid-auto-columns: 480px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 20px;
+    margin: auto;
+    grid-template-columns: auto;
 
 }
 
+.towntextcontainer{
+    height: 200px;
+    margin:auto;
+}
 
 
+.towntextcontainer h2{
+    padding-bottom: 0px;
+    margin-block-end: 0em;
+}
+
+.towntextcontainer span:nth-child(3){
+    padding-top:10px;
+}
+
+.townmotto{
+    font-size: .8rem;
+    font-style: italic;
+}
 
 .towns section{
         margin-top:0px;
         margin-bottom: 0px;
         padding-bottom: 50px;
-        width: 90%;
+        width: 100%;
         margin:auto;
         background-color: #B9B9CC;
         border:1px solid #6868e6eb;
@@ -475,4 +492,8 @@ grid-auto-columns: 480px;
 .towns img{
     width: 90%;
     margin:auto;
+}
+
+.towntextcontainer{
+    width: 90%;
 }
