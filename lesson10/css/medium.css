@@ -1,0 +1,46 @@
+@media only screen and (min-width: 37.5em) {
+  
+    .weather_summary{
+        top: 370px;
+        left: 15%;
+        position: absolute;
+    }
+
+  
+    
+    
+ /* Gallery page css    */
+ .gallery_container{
+    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+    
+ }
+
+ 
+ .form_set{
+    display: grid;
+    grid-template-columns:minmax(.1em, .5fr) minmax(0em, .75fr) minmax(0em, 2.25fr) minmax(0em, .5fr);
+    justify-content: center;
+    grid-gap: 2em;
+    align-items: center;
+    padding:5px;
+ }
+
+ .form_set label{
+    grid-column: 2 / 2;
+ }
+
+ .form_set input, .form_set datalist, .form_set button {
+    grid-column: 3 / 4;
+ }
+
+ 
+
+
+
+/* /hompage form */
+.towns{
+   grid-template-columns:repeat(2, 1fr);
+   }
+  
+            
+}

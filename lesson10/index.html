@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Rio Michael Miranda">
-        <meta name="description" content="Assignment #9 for Rio Michael Miranda in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="description" content="Assignment #10 for Rio Michael Miranda in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
         
         
         <link rel="shortcut icon" href="../favicon.ico">
@@ -22,8 +22,11 @@
 
         <script src="../js/modified.js" defer></script>
         <script src="js/menujs.js" defer></script>
+        <!-- <script src="js/forecast.js" defer></script>
+         <script src="js/windchill.js" defer></script> -->
         <script src="js/fridaymadness.js" defer></script>
-        <script src="js/importantjs.js"></script>
+        <script src="js/towns.js"></script>
+       <script src="js/importantjs.js"></script>
         
     </head><body>
 
@@ -36,7 +39,7 @@
 
         <header>
             
-                <div id="mainlogo"><img src="images/logo-optimized.png" data-src="images/gallery/" alt="main logo"></div>
+                <div id="mainlogo"><img src="images/logo-optimized.png" alt="main logo"></div>
                 <div id="maintag">
                     <h1>The Weather Check</h1>
                     <span class="maintagline">Weather you Like it or Not</span>    
@@ -48,8 +51,8 @@
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
-                <li><a href="preston-9.html">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li  class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
@@ -58,24 +61,14 @@
         </nav>
         
         <main>
-            <article>
-               <h2>Thank you!</h2> 
-                  
-                   <p>
-                       Hello, we're grateful for filling up the form. We will do our best to inform you the necessary precautions pertaining to weather.
-                   </p>
-                   <p>
-                       We pray for your safety!
-                   </p>
-                   <p>
-                       Thank you,<br>
-                       Weather Check
-                   </p>
-
+            <div class="towns">
                 
-
-            </article>
+            </div>
         </main>
+
+
+   
+
 
 
 
@@ -90,11 +83,11 @@
                     <div class="footercontact">
                         <span class="footer_header">Contact US</span>
                         <ul class="list-inline">
-                            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-pinterest"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-youtube"></span></a></li>
                             </ul>
                     </div>      
                 </div>
