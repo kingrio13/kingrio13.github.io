@@ -17,7 +17,7 @@ fetch(forecastURL)
         let imageid="forcastimg"+x;
       
 
-        console.log(forecastObject.list[i].weather[0].icon);
+        //console.log(forecastObject.list[i].weather[0].icon);
 
         //icon
         //http://openweathermap.org/img/wn/10d@2x.png
