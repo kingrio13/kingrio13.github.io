@@ -51,7 +51,7 @@
             <ul class="navigation">
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li  class="active"><a href="preston.html">Preston</a></li>
+                <li  class="active"><a href="preston-10.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
@@ -76,17 +76,17 @@
                             <span class="weather_header">Weather Summary</span>
                             <div class="weather_info_wrapper">
                                     <div class="weather_info_row1">Currently:</div>
-                                    <div class="weather_info_row2">Sunny</div>
+                                    <div class="weather_info_row2" id="currentWeather">Sunny</div>
                                     
                                     <div class="weather_info_row1">High:</div>
-                                    <div class="weather_info_row2" id="temperature">22 &#8457;</div>
+                                    <div class="weather_info_row2" id="temperature"></div>
 
 
                                     <div class="weather_info_row1">Wind Chil:</div>
                                     <div class="weather_info_row2" id="windF"></div>
 
                                     <div class="weather_info_row1">Humidity:</div>
-                                    <div class="weather_info_row2" id="humidity">69%</div>
+                                    <div class="weather_info_row2" id="humidity"></div>
 
                                     <div class="weather_info_row1">Wind Speed:</div>
                                     <div class="weather_info_row2" id="windspeed">5mp</div>
@@ -100,35 +100,35 @@
                             <div class="forecastflex">
                                 <div class="col">
                                     <span class="forecastlabel">1</span>
-                                    <img src="images/sunny.png" alt="Sunny">
-                                    <span class="forecastflexdata">65 &#8457;</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg0">
+                                    <span class="forecastflexdata" id="forcastweather0">65 &#8457;</span>
                                 </div>
 
                                 <div class="col">
                                     <span class="forecastlabel">2</span>
-                                    <img src="images/sunny.png" alt="Sunny">
-                                    <span class="forecastflexdata">69 &#8457;</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg1">
+                                    <span class="forecastflexdata" id="forcastweather1">69 &#8457;</span>
                                 </div>
 
 
                                 <div class="col">
                                     <span class="forecastlabel">3</span>
-                                    <img src="images/sunny.png" alt="Sunny">
-                                    <span class="forecastflexdata">67 &#8457;</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg2">
+                                    <span class="forecastflexdata" id="forcastweather2">67 &#8457;</span>
                                 </div>
 
 
                                 <div class="col">
                                     <span class="forecastlabel">4</span>
-                                    <img src="images/sunny.png" alt="Sunny">
-                                    <span class="forecastflexdata">70 &#8457;</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg3">
+                                    <span class="forecastflexdata" id="forcastweather3">70 &#8457;</span>
                                 </div>
 
                                 
                                 <div class="col">
                                     <span class="forecastlabel">5</span>
-                                    <img src="images/sunny.png" alt="Sunny">
-                                    <span class="forecastflexdata">65 &#8457;</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg4">
+                                    <span class="forecastflexdata" id="forcastweather4">65 &#8457;</span>
                                 </div>
 
 
@@ -193,7 +193,8 @@
                 </div>
         </footer>
 
-        <!-- https://fonts.googleapis.com/css?family=Josefin+Sans%7cMerriweather&display=swap -->
+        <script src="js/weatherap.js"></script>
+        <script src="js/weatherforecast.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="../js/webfont.js"></script>
     </body>
