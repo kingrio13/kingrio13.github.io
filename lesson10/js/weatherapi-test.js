@@ -5,6 +5,8 @@ fetch(apiURL)
     //console.log(weathertemp);
     //console.log(weathertemp.main.temp);
     //document.getElementById('current-temp').innerHTML=weathertemp.main.temp;
+
+    let temp=(weatherObject.main.temp-273.15)*9/5+32;
     document.getElementById('current-temp').innerHTML=weatherObject.main.temp;
 
 
