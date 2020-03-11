@@ -9,7 +9,12 @@ fetch(apiURL)
 
 
  //console.log(weatherObject.main.temp);
- document.getElementById('temperature').innerHTML=weatherObject.main.temp + "&#8457;";
+
+ let temp=weatherObject.main.temp;
+ //(0K − 273.15) × 9/5 + 32
+ temp=(temp-273.15)*9/5+32;
+ 
+ document.getElementById('temperature').innerHTML=temp.toFixed(2) + "&#8457;";
 
 
  //console.log(weatherObject.main.humidity);

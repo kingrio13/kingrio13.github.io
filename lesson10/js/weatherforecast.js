@@ -29,7 +29,8 @@ fetch(forecastURL)
         document.getElementById(imageid).setAttribute('alt', forecastObject.list[i].weather[0].description);
         
         //temperature
-        document.getElementById(elementid).innerHTML=forecastObject.list[i].main.temp + "&#8457;";
+        let temp=(forecastObject.list[i].main.temp-273.15)*9/5+32;
+        document.getElementById(elementid).innerHTML=temp.toFixed(2) + "&#8457;";
         //console.log(forecastObject.list[i].main.temp + "object#"+ i);
         x++;
       }
