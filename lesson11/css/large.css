@@ -4,11 +4,11 @@
         border-radius: 10px;
         position: absolute;
         display: inline-block;
-        top: 390px;
-        left: 15%;
-      color:white;
-      max-height: 250px;
-      height: 100%;
+        top: 10px;
+        left: 10%;
+        color: white;
+        max-height: 250px;
+        height: 100%;
     }
 
     .footer_header{

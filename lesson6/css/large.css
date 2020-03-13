@@ -4,11 +4,11 @@
         border-radius: 10px;
         position: absolute;
         display: inline-block;
-        top: 390px;
-        left: 15%;
-      color:white;
-      max-height: 250px;
-      height: 100%;
+        top: 10px;
+        left: 10%;
+        color: white;
+        max-height: 250px;
+        height: 100%;
     }
 
     .footer_header{
@@ -99,7 +99,7 @@ nav ul li  a:active {
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
-	
+	background: #22313f26;
 	font-size: 13px;
 	text-align: center;
 }
@@ -139,7 +139,21 @@ nav ul li  a:active {
 }
 
 
+  
+ /* Gallery page css    */
+ .gallery_container{
+    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+    width: 100%;
+    transition: all 1s;
+    
+ }
+
+ .gallery_container img:hover {box-shadow: 0 0 50px #333;}
 
 
+/* /hompage form */
+.towns{
+grid-template-columns:repeat(3, 1fr);
+}
 
 }

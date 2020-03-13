@@ -138,6 +138,7 @@ width: 100%;
 /* main content here */
 .banner_container{
   width: 100%;
+  position: relative;
     }
 
     
@@ -153,7 +154,7 @@ width: 100%;
     margin: auto;
     background-color: rgba(34, 49, 63, 0.63);
     height: auto;
-    top: 355px;
+    top: 10px;
     left: 10%;
     
 }

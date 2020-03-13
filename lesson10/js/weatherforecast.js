@@ -13,10 +13,6 @@ fetch(forecastURL)
       //console.log(newdate.getHours());
       //18:00
       if(newdate.getHours()==18){
-        let elementid="forcastweather"+x;
-        let imageid="forcastimg"+x;
-      
-
         //console.log(forecastObject.list[i].weather[0].icon);
 
         //icon
@@ -25,12 +21,12 @@ fetch(forecastURL)
 
         let imagelink=`http://openweathermap.org/img/wn/${forecastObject.list[i].weather[0].icon}@2x.png`;
 
-        document.getElementById(imageid).setAttribute('src', imagelink);
-        document.getElementById(imageid).setAttribute('alt', forecastObject.list[i].weather[0].description);
+        document.getElementById(`forcastimg${x}`).setAttribute('src', imagelink);
+        document.getElementById(`forcastimg${x}`).setAttribute('alt', forecastObject.list[i].weather[0].description);
         
         //temperature
         let temp=(forecastObject.list[i].main.temp-273.15)*9/5+32;
-        document.getElementById(elementid).innerHTML=temp.toFixed(2) + "&#8457;";
+        document.getElementById(`forcastweather${x}`).innerHTML=temp.toFixed(2) + "&#8457;";
         //console.log(forecastObject.list[i].main.temp + "object#"+ i);
         x++;
       }

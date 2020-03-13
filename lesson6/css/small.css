@@ -108,10 +108,7 @@ nav{
 }
 
 
-.navigation .changex{
-    /* content: "wew"; */
 
-}
 
 
 .responsive li {
@@ -141,6 +138,7 @@ width: 100%;
 /* main content here */
 .banner_container{
   width: 100%;
+  position: relative;
     }
 
     
@@ -156,7 +154,7 @@ width: 100%;
     margin: auto;
     background-color: rgba(34, 49, 63, 0.63);
     height: auto;
-    top: 355px;
+    top: 10px;
     left: 10%;
     
 }
@@ -319,4 +317,183 @@ font-size: 2.2rem;
     color: rgba(255,0,0,.8);
     
     }
+
+
+
+ /* Gallery page css    */
+
+ .gallery_container{
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     grid-template-columns: auto;
+ }
+
+ .gallery_col{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
  
+ .gallery_col figcaption{
+     text-align: left;
+     width: 100%;
+ }
+
+ 
+ .appear {
+	opacity: 1;
+  }
+  .gal7 {
+	opacity: 0;
+    transition: opacity 250ms ease-in; 
+  }
+  
+  .gal7.appear{
+	opacity: 1;
+  }
+
+ /* Stormcenter forms */
+ 
+ .form_set{
+    display: grid;
+    grid-template-columns:minmax(1em, 1fr) minmax(1em, 3fr);
+    justify-content: center;
+    grid-gap: .5em;
+    align-items: center;
+    padding:5px;
+ }
+
+ .form_set label{
+    grid-column: 1 / 2;
+ }
+
+ .form_set input, .form_set datalist, .form_set button {
+    grid-column: 2 / 2;
+ }
+
+ #stormratingvalue{
+     padding-left: 10px;
+     font-size: 18px;
+ }
+  
+ .form_set input, .form_set datalist, .form_set select{
+     padding:10px;
+ }
+
+ .form_set input[type=range]{
+     padding:0px;
+     width: 80%;
+ }
+
+ .form_set input[type=radio]{
+    width: 20px;
+    height: 20px;
+ }
+.form_set textarea{
+    height: 200px;
+}
+
+
+ .form_set.form_adjust{
+     grid-row-gap: 0em;
+ }
+ .gridgroup{
+     display: flex;
+     align-content: center;
+ }
+
+
+ .gridgroup span{
+     padding-right: 10px;
+     align-content: center;
+ }
+ .form_set input[type=submit] {
+     padding:20px;
+     cursor: pointer;
+     background-color: #22313f;
+     border: 1px solid #333;
+     color:#fff;
+ }
+
+ .form_set input[type=submit]:hover{
+     background:#22313fc9;
+     border:1px solid red;
+ }
+
+
+.form_set input, .form_set textarea{
+    border:1px solid  rgb(189, 196, 212);
+}
+
+/* homepage */
+.towns{
+    padding: 50px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 20px;
+    margin: auto;
+    grid-template-columns: auto;
+
+}
+
+.towntextcontainer{
+    height: 200px;
+    margin:auto;
+}
+
+
+.towntextcontainer h2{
+    padding-bottom: 0px;
+    margin-block-end: 0em;
+}
+
+.towntextcontainer span:nth-child(3){
+    padding-top:10px;
+}
+
+.townmotto{
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.towns section{
+        margin-top:0px;
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin:auto;
+        background-color: #B9B9CC;
+        border:1px solid #6868e6eb;
+}
+
+.towns section img{
+    /* width: 100%; */
+    max-height: 300px;
+    display: block;
+    margin:auto;
+    margin-top:20px;
+    box-shadow: 0px 0px 15px #333;
+   
+}
+
+.towns section span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom:.5em; 
+}
+
+.towns section h2{
+    text-align: center;
+}
+
+.towns img{
+    width: 90%;
+    margin:auto;
+}
+
+.towntextcontainer{
+    width: 90%;
+}
