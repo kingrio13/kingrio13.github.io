@@ -38,9 +38,23 @@
 
 
 /* /hompage form */
-.towns{
-   grid-template-columns:repeat(2, 1fr);
+
+
+   .towns section{
+      display:flex;
+      padding-bottom: 0px;
+   }
+
+
+   .towns section:nth-child(even) {
+      flex-direction: row-reverse;
    }
   
+
+   .towns section img{
+      max-height: 200px;
+    margin: 20px;
+
+   }
             
 }

@@ -152,8 +152,17 @@ nav ul li  a:active {
 
 
 /* /hompage form */
+
 .towns{
+    display: grid;
 grid-template-columns:repeat(3, 1fr);
 }
+
+.towns section{
+    display:grid;
+    padding-bottom: 50px;
+   
+ }
+
 
 }
