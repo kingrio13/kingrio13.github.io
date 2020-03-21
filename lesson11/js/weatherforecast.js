@@ -1,10 +1,35 @@
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
+
+
+
+ //5604473 - preston
+ //5585010 - Fish Haven
+ //5607916 - Soda Spring
+
+
+ var forecastURL;
+ switch(doctitle.toLowerCase()) {
+  case "preston":
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
+    console.log("preston");
+   break;
+  case "fish haven":
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=c000215b640f5b08daddcd029b6207aa";
+   console.log("Fish Haven");
+   break;
+  case "soda springs":
+    console.log("Soda Spring");
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=c000215b640f5b08daddcd029b6207aa";
+  break;
+
+}
+
+//const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
 fetch(forecastURL)
   .then((responseforecast) => responseforecast.json())
   .then((forecastObject) => {
 
-    console.table(forecastObject);
-    console.log(forecastObject);
+   // console.table(forecastObject);
+    //console.log(forecastObject);
 
     
    let x=0;

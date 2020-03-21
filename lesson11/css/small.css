@@ -77,12 +77,15 @@ main {
 article{
     width:100%;
     max-width: 1200px;
+  padding:20px;
+}
+
+section.contentimage{
     padding:20px;
-    
+    background:#22313f24;
 }
 
 section{
-    margin:20px;
     padding-bottom: 20px;
     
 }
@@ -194,21 +197,33 @@ width: 100%;
 
 .contentimage{
     display: flex;
-  
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .onethird{
-    margin-top:30px;
+  
     text-align: justify;
 }
-
+.section_author{
+    width: 100%;
+    clear: both;
+    text-transform: uppercase;
+    display: block;
+    font-size: .7rem;
+    color:#22313fad;
+    font-style: italic;
+    font-family: 'Ubuntu';
+  
+}
 
 .onefourth img{
 margin:auto;
 display: block;
 width: 100%;
 height: auto;
+border-radius: 4%;
+box-shadow: 0px 0px 15px #333;
+margin-bottom: 30px;
 }
 
 .sectionheader{
@@ -497,4 +512,36 @@ font-size: 2.2rem;
 
 .towntextcontainer{
     width: 90%;
+}
+
+
+.eventtowntitle{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #22313f24;
+}
+
+.forecastflexdata{
+    font-family: 'Ubuntu';
+    transition-timing-function: ease-in;
+    transition: 1s;
+}
+
+.eventdiv{
+    background: #22313f24;
+    padding:20px;
+    transition-timing-function: ease-in;
+    transition: 1s;
+
+}
+.eventdiv ul li{
+    list-style: none;
+    font-family: 'Ubuntu';
+
+}
+
+.forecast_disclaimer{
+    font-size: .8rem;
+    font-style: italic;
+    font-family: 'Ubuntu';
 }

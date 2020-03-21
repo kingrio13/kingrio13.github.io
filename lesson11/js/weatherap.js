@@ -1,4 +1,32 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
+
+ let doctitle=document.title;
+
+ //5604473 - preston
+ //5585010 - Fish Haven
+ //5607916 - Soda Spring
+
+
+ var apiURL;
+ switch(doctitle.toLowerCase()) {
+  case "preston":
+    apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
+    console.log("preston");
+   break;
+  case "fish haven":
+     apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=c000215b640f5b08daddcd029b6207aa";
+   console.log("Fish Haven");
+   break;
+  case "soda springs":
+    console.log("Soda Spring");
+  apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=c000215b640f5b08daddcd029b6207aa";
+  break;
+
+}
+
+//console.log(apiURL);
+ 
+//const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c000215b640f5b08daddcd029b6207aa";
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherObject) => {

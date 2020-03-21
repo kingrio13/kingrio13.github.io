@@ -133,9 +133,15 @@ nav ul li  a:active {
     font-weight: bold;
 }
 
+
+.onethird{
+    flex-basis: 70%;
+    padding:10px;
+}
+
 .onefourth{
     margin: auto;
-    padding: 20px;
+ 
 }
 
 
