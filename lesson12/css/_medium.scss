@@ -1,64 +1,61 @@
 @media only screen and (min-width: 37.5em) {
   
-    .weather_summary{
-        top: 10px;
-        left: 10%;
-        position: absolute;
-    }
-
-  
-    
-    
- /* Gallery page css    */
- .gallery_container{
-    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
-    
- }
+   .weather_summary{
+       top: 10px;
+       left: 10%;
+       position: absolute;
+   }
 
  
- .form_set{
-    display: grid;
-    grid-template-columns:minmax(.1em, .5fr) minmax(0em, .75fr) minmax(0em, 2.25fr) minmax(0em, .5fr);
-    justify-content: center;
-    grid-gap: 2em;
-    align-items: center;
-    padding:5px;
- }
+   
+   
+/* Gallery page css    */
+.gallery_container{
+   grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+   
+}
 
- .form_set label{
-    grid-column: 2 / 2;
- }
 
- .form_set input, .form_set datalist, .form_set button {
-    grid-column: 3 / 4;
- }
+.form_set{
+   display: grid;
+   grid-template-columns:minmax(.1em, .5fr) minmax(0em, .75fr) minmax(0em, 2.25fr) minmax(0em, .5fr);
+   justify-content: center;
+   grid-gap: 2em;
+   align-items: center;
+   padding:5px;
+   label{
+      grid-column: 2 / 2;
+   }
+   input, datalist,  button {
+      grid-column: 3 / 4;
+   }
+}
 
- 
+
 
 
 
 /* /hompage form */
 article{
-  
- padding:20px 0px;
+ 
+padding:20px 0px;
 }
 
 
-   .towns section{
-      display:flex;
-      padding-bottom: 0px;
-   }
-
-
-   .towns section:nth-child(even) {
-      flex-direction: row-reverse;
-   }
-  
-
-   .towns section img{
+  .towns section{
+     display:flex;
+     padding-bottom: 0px;
+     img{
       max-height: 200px;
     margin: 20px;
-
+ 
    }
-            
+  }
+
+
+  .towns section:nth-child(even) {
+     flex-direction: row-reverse;
+  }
+
+           
 }

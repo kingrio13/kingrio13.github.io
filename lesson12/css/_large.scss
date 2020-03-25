@@ -99,7 +99,7 @@ nav ul li  a:active {
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
-	background: #22313f26;
+	background: $sectionmain;
 	font-size: 13px;
 	text-align: center;
 }
@@ -160,17 +160,13 @@ nav ul li  a:active {
 /* /hompage form */
 
 .towns{
-  display: grid;
-    //grid-template-columns:repeat(auto-fill, 1fr);
-    grid-template-columns:1fr 1fr 1fr;
-
+    display: grid;
+grid-template-columns:repeat(3, 1fr);
+        section{
+            display:grid;
+            padding-bottom: 50px;
+        
+        }
 }
-
-.towns section{
-    display:grid;
-    padding-bottom: 50px;
-   
- }
-
 
 }
