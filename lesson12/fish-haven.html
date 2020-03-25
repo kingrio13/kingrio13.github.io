@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Fish Haven</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rio Michael Miranda">
+        <meta name="description" content="Assignment #11 for Rio Michael Miranda in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+        
+        
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   
+       
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet"> 
+        <link href="css/large.css" rel="stylesheet">
+        
+
+        <script src="../js/modified.js" defer></script>
+        <script src="js/menujs.js" defer></script>
+        <script src="js/forecast.js" defer></script>
+         <!-- <script src="js/windchill.js" defer></script> -->
+         <!-- windchill code is moved to weatherapp -->
+        <script src="js/fridaymadness.js" defer></script>
+        <script src="js/importantjs.js"></script>
+        
+    </head><body>
+
+
+        <aside>
+            <div class="banner_reminder" id="fridaybanner">
+                Saturday = Fish Haven Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            </div>
+        </aside>
+
+        <header>
+            
+                <div id="mainlogo"><img src="images/logo-optimized.png" alt="main logo"></div>
+                <div id="maintag">
+                    <h1>The Weather Check</h1>
+                    <span class="maintagline">Weather you Like it or Not</span>    
+                </div>
+        </header>
+
+
+        
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li class="active"><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <article>
+               <h2>Fish Haven</h2> 
+
+               <section class="slider">
+                    <div class="banner_container">
+                        <picture class="picslider">
+                            <source media="(min-width: 60em)" srcset="images/fishhaven_large.jpg">
+                            <source media="(min-width: 37.5em)" srcset="images/fishhaven_medium.jpg">
+                            <img src="images/fishhaven_small.jpg" alt="small Banner">
+                        </picture>
+
+
+                    <div class="weather_summary">
+                            <span class="weather_header">Weather Summary</span>
+                            <div class="weather_info_wrapper">
+                                    <div class="weather_info_row1">Currently:</div>
+                                    <div class="weather_info_row2" id="currentWeather"></div>
+                                    
+                                    <div class="weather_info_row1">High:</div>
+                                    <div class="weather_info_row2" id="temperature"></div>
+
+
+                                    <div class="weather_info_row1">Wind Chil:</div>
+                                    <div class="weather_info_row2" id="windF"></div>
+
+                                    <div class="weather_info_row1">Humidity:</div>
+                                    <div class="weather_info_row2" id="humidity"></div>
+
+                                    <div class="weather_info_row1">Wind Speed:</div>
+                                    <div class="weather_info_row2" id="windspeed"></div>
+                            </div> 
+                        </div>  
+                     </div> <!--banner container        -->
+               </section>
+
+               
+         
+
+
+
+               <section class="forecast">
+                            <div class="section_header">5 day Forecast</div>    
+                            <div class="forecastflex">
+                                <div class="col">
+                                    <span class="forecastlabel">1</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg0">
+                                    <span class="forecastflexdata" id="forcastweather0">65 &#8457;</span>
+                                </div>
+
+                                <div class="col">
+                                    <span class="forecastlabel">2</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg1">
+                                    <span class="forecastflexdata" id="forcastweather1">69 &#8457;</span>
+                                </div>
+
+
+                                <div class="col">
+                                    <span class="forecastlabel">3</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg2">
+                                    <span class="forecastflexdata" id="forcastweather2">67 &#8457;</span>
+                                </div>
+
+
+                                <div class="col">
+                                    <span class="forecastlabel">4</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg3">
+                                    <span class="forecastflexdata" id="forcastweather3">70 &#8457;</span>
+                                </div>
+
+                                
+                                <div class="col">
+                                    <span class="forecastlabel">5</span>
+                                    <img src="images/sunny.png" alt="Sunny" id="forcastimg4">
+                                    <span class="forecastflexdata" id="forcastweather4">65 &#8457;</span>
+                                </div>
+                            </div>    
+                            <span class="forecast_disclaimer">*Weather information provided by <a href="http://openweathermap.org/" target="_blank">OpenWeatherMap.org</a></span>
+               </section>
+
+               <section class="events">
+                   
+            </section>
+
+               <section class="contentimage">
+                   <div class="onethird">
+                       <span class="sectionheader">How Lightning Created</span>
+                       <span class="section_author">BY Rio Michael</span>
+                       <p>
+                            Weather seems to be stronger and stronger as time goes by. Many factor affecting it! one of the most
+                            we fear is the word "Global Warming". We can't deny that because of Global warming, weather is withering.
+                       </p>
+                       <p>
+                           There's something we can do, aside from prepairing our 72 hour kit, or a month or year supply. We can do
+                           meaningful activities that helps and preserve nature. We can plant trees, beach cleaning and even simple things
+                           such as limiting the use of plastics.
+                       </p>
+
+                       <p>
+                           Recycling is one of the best way, by small and simple things we do, great things will happen. We might not know
+                           we're already inspiring people to do thesame. They might not need someone to follow, let us be an example! Weather
+                           wont wither no more.
+                       </p>
+                   </div>
+
+                   <div class="onefourth">
+
+                        <picture>
+                            <source media="(min-width: 60em)" srcset="images/foggysmallbanner-large.jpg">
+                            <source media="(min-width: 37.5em)" srcset="images/foggysmallbanner-medium.jpg">
+                            <img src="images/foggysmallbanner-small.jpg" alt="small Banner">
+
+                        </picture>
+                        
+                   </div>
+               </section>
+
+
+
+
+
+            </article>
+        </main>
+
+
+
+        <footer>
+
+            <div class="firstfooter_wrapper">
+                <div class="firstrow_footer">
+                    <div class="footermap">
+                        <span class="footer_header">Visit US</span>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276%2C%20USA!5e0!3m2!1sen!2sph!4v1580994079068!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="footercontact">
+                        <span class="footer_header">Contact US</span>
+                        <ul class="list-inline">
+                            <li><a href="#" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-pinterest"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                    </div>      
+                </div>
+            </div>
+
+
+
+
+                <div class="credit_wrapper">
+                    <div class="footer_firstline">&copy; 2020 | Rio Michael Miranda | Philippines | <a href="http://byui.edu/" target="_blank" class="footerlink">BYUI Online Learning</a></div>
+                    <div class="footer_secondline" id="lastupdated"></div>
+                </div>
+        </footer>
+
+        <script src="js/event.js"></script>
+        <script src="js/weatherap.js"></script>
+        <script src="js/weatherforecast.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="../js/webfont.js"></script>
+    </body>
+    </html>
