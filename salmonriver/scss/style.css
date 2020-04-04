@@ -454,8 +454,8 @@ h1, h2, h3, h4, h5 {
 .reservation-note-table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 1em;
   font-style: normal;
   justify-items: center;
@@ -476,8 +476,8 @@ h1, h2, h3, h4, h5 {
 .section-weather .weather_info_wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(1em, 1fr) (minmax(200px, 400px))[2] minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+  -ms-grid-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em, 1fr);
 }
 
 .section-weather .weather_info_wrapper h2 {
@@ -519,15 +519,15 @@ h1, h2, h3, h4, h5 {
     display: block;
   }
   .section-gallery-grid div {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .menu-wrapper {
     left: 20px;
   }
   footer section, .section-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .hide-mobile {
     display: block;
@@ -536,8 +536,8 @@ h1, h2, h3, h4, h5 {
     text-align: left;
   }
   .form_set {
-    -ms-grid-columns: minmax(1em, 1fr) (minmax(200px, 400px))[2] minmax(1em, 1fr);
-        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+    -ms-grid-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em, 1fr);
   }
   .form_set label {
     -ms-grid-column: 2;
@@ -557,13 +557,13 @@ h1, h2, h3, h4, h5 {
 
 @media only screen and (min-width: 60em) and (min-width: 60em) {
   .section-gallery-grid div, .section-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
   }
   footer section {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

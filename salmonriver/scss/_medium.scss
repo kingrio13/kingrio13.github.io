@@ -15,7 +15,7 @@
 
     .section-gallery-grid div{
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:  1fr 1fr;
         
     }
 
@@ -24,7 +24,7 @@
       }
 
       footer section, .section-grid{
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr 1fr;
         
       } 
 
@@ -37,7 +37,7 @@
       }
 
       .form_set{
-        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em,1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em,1fr);
       }
       
     .form_set label{

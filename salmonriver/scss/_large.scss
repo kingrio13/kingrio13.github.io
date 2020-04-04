@@ -3,13 +3,13 @@
         
     .section-gallery-grid div, .section-grid{
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
             
     }
 
     footer section{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
       
     } 
 

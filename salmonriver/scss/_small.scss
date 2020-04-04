@@ -417,7 +417,7 @@ header{
 
 .reservation-note-table{
   display: grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:1fr 1fr 1fr 1fr;
   font-size: 1em;
   font-style: normal;
   justify-items: center;
@@ -438,7 +438,7 @@ header{
   padding: 2em;
 .weather_info_wrapper{
   display: grid;
-  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em,1fr);
+  grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em,1fr);
         
         h2{
           margin-block-end: 0.4em;
