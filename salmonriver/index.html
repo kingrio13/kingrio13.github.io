@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Rio Michael Miranda">
+    <meta name="description" content="Home page for Salmon River Adventure (Water Rafting)">
+        
+    <title>Home Page</title>
 
 
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="scss/style.min.css">
     
@@ -14,43 +19,202 @@
 </head>
 <body>
 
-    <header>
-           
-            <nav class="mainmenu">
-                <ul class="mainmenu_ul">
-                    <li><a class="ham" href="#">&#9776; Menu</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="reservation.html">reservation</a></li>
-                </ul>
-            </nav>
 
-         
+    <nav class="menu-wrapper">
+        
+        <div href="#" class="btn-ham">
+         <ul>
+           <li><a href="river-guides.html">River Guides</a></li>
+           <li><a href="contact-us.html">Contact Us</a></li>
+           <li><a href="reservation.html">reservation</a></li>
+         </ul>
+        </div>
+       </nav>
+       
+
+
+    <header class="header-default">
+        <div>
+            &nbsp;
+        </div>
 
             <div>
                 <a href="index.html">
-                    logo here
-                    <!-- <img src="assets/logo.png" alt="main logo"> -->
+                    <img src="assets/logo-white.png" class="mainlogo">
                 </a>
             </div>
 
-            <div>
-                <span><a href="contact-us.html">Contact us</a></span>
+            <div class="hide-mobile">
+                <span class="contactus-btn"><a href="contact-us.html">Contact us</a></span>
             </div>
     </header>
     
     <main>
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Welcome to Salmon River</h2>
+                 
+             </div>
+        </section>
+        
+        <div class="crumbs">
+
+        </div>
+
+        
+        <section class="section-weather colorAlt fade-in center">
+            <div class="weather_summary">
+                <h2 class="weather_header">Current Weather for </h2>
+                <div class="weather_info_wrapper">
+                        <span class="weather_info_row1">Currently:</span>
+                        <span class="weather_info_row2" id="currentWeather"></span>
+                        
+                        <span class="weather_info_row1">High:</span>
+                        <span class="weather_info_row2" id="temperature"></span>
+
+
+                        <span class="weather_info_row1">Wind Chil:</span>
+                        <span class="weather_info_row2" id="windF"></span>
+
+                        <span class="weather_info_row1">Humidity:</span>
+                        <span class="weather_info_row2" id="humidity"></span>
+
+                        <span class="weather_info_row1">Wind Speed:</span>
+                        <span class="weather_info_row2" id="windspeed"></span>
+                </div> 
+            </div> 
+
+   
+        </section>
+
+
+        <section class="section-flex">
+            
+            <div class="fade-in">
+                <span class="section-header">Adventure Trips</span>
+                
+                <p>
+                    list of adventures
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et iaculis nisi. Quisque venenatis dignissim ligula id vulputate. Proin vestibulum ultricies metus sed lobortis. Donec tempus felis id magna dapibus, quis tristique risus luctus. Donec metus ligula, luctus nec sapien a, cursus elementum elit. Suspendisse elementum est ligula, ac ultricies sem placerat vitae. Phasellus eget egestas urna. Mauris non tincidunt neque.
+                </p>
+            </div>
+
+            <div>
+                <img src="assets/image1.jpg" alt="Featured image here" class="fade-in">
+            </div>
+        </section>
+
+
+
+        <section class="section-flex colorAlt fade-in center">
+          
+                    <h2 class="section-header">One great Experience</h2>
+                    <p>
+                       Price, and recommendations, free when you clean 
+                    </p>
+           
+        </section>
+
+
+        <section class="section-flex">
+            <div>
+                <img src="assets/image2.jpg" alt="Featured image here" class="fade-in">
+            </div>
+
+            <div class="fade-in">
+                <span class="section-header">Title Here</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et iaculis nisi. Quisque venenatis dignissim ligula id vulputate. Proin vestibulum ultricies metus sed lobortis. Donec tempus felis id magna dapibus, quis tristique risus luctus. Donec metus ligula, luctus nec sapien a, cursus elementum elit. Suspendisse elementum est ligula, ac ultricies sem placerat vitae. Phasellus eget egestas urna. Mauris non tincidunt neque.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section-flex colorAlt fade-in center">
+          
+                <h2 class="section-header">Title Here</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et iaculis nisi. Quisque venenatis dignissim ligula id vulputate. Proin vestibulum ultricies metus sed lobortis. Donec tempus felis id magna dapibus, quis tristique risus luctus. Donec metus ligula, luctus nec sapien a, cursus elementum elit. Suspendisse elementum est ligula, ac ultricies sem placerat vitae. Phasellus eget egestas urna. Mauris non tincidunt neque.
+                </p>
+          
+        </section>
+
+
+        <section class="section-gallery-grid">
+            
+            <span class="gallery-title">Gallery</span>
+            <div>
+                <img data-src="assets/image1.jpg" alt="Featured image here" class="home-gal fade-in">
+          
+                <img data-src="assets/image1.jpg" alt="Featured image here"class="home-gal fade-in">
+          
+                <img data-src="assets/image1.jpg" alt="Featured image here"class="home-gal fade-in">
+          
+                <img data-src="assets/image1.jpg" alt="Featured image here"class="home-gal fade-in">
+          
+                <img data-src="assets/image1.jpg" alt="Featured image here"class="home-gal fade-in">
+
+                <img data-src="assets/image1.jpg" alt="Featured image here"class="home-gal fade-in">
+            </div>
+        </section>
+
+
+
+
 
     </main>
     
-    <footer>
+  
 
-    </footer>
+        <footer>
+              <section class="footer-first-row">
+                <div class="footermap">
+                    <span class="footer_header">Visit US</span>
+                    <a href="https://www.google.com/maps/place/1131+S+Main+St,+Riggins,+ID+83549,+USA/@45.415589,-116.319959,16z/data=!4m5!3m4!1s0x54a6c56c1512fddf:0xf619777ed0a5dd57!8m2!3d45.4155889!4d-116.3199595?hl=en">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.6898921410707!2d-116.32214818509257!3d45.415592644707615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c56c1512fddf%3A0xf619777ed0a5dd57!2s1131%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549%2C%20USA!5e0!3m2!1sen!2sph!4v1585971764632!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+                    </a>
+                </div>
+
+                <div class="footer-site-map">
+                    <span class="footer_header">Site Map</span>
+                    <ul class="footer-menu">
+                        <li><a href="river-guides.html">River Guides</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                      </ul>
+                </div>
+
+                <div>
+                    <span class="footer_header">Contact US</span>
+                        <ul class="list-inline">
+                            <li><a href="#" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-pinterest"></span></a></li>
+                                <li><a href="#" target="_blank"><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                </div>
+             </section>  
+             
+             <section class="footer-credits">
+                <div>&copy; 2020 | Rio Michael Miranda</div>
+                 
+             </section>
+
+        </footer>        
+
+
+
+
+
+
 
 
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js" defer></script>
-    <script src="js/menujs.js" defer></script>
+    <script src="js/menu-gallery.js" defer></script>
+    <script src="js/weather.js" defer></script>
 </html>

@@ -1,0 +1,49 @@
+{
+    "team": [
+      {
+        "name": "Diana May",
+        "lastname": "Miranda",
+        "position": "ceo",
+        "description": "He leads the way on looking to the future for change opportunities. ",
+        "imageurl": "assets/dianamay.jpg"
+      },
+       {
+        "name": "Rio",
+        "lastname": "Miranda",
+        "position": "River Guide",
+        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
+        "imageurl": "assets/riomichael.jpg"
+      },
+      
+      {
+        "name": "Michael",
+        "lastname": "Miranda",
+        "position": "River Guide",
+        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
+        "imageurl": "assets/riomichael.jpg"
+      },
+      {
+        "name": "King",
+        "lastname": "Miranda",
+        "position": "River Guide",
+        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
+        "imageurl": "assets/riomichael.jpg"
+      },
+      
+      {
+        "name": "Nate",
+        "lastname": "Miranda",
+        "position": "Park Rangers",
+        "description": "Park Rangers support the Bureau's recreation program. In some locations some of the positions may have duties that focus on assisting in the performance of day-to-day operations at a visitor center or customer use area that provide facilities such as campgrounds, picnic areas, trails, and/or other specialized recreational opportunities. Park Rangers at these locations may perform duties such as facility maintenance/repair, litter removal, hauling, routine trail maintenance, toilet cleaning, basic carpentry, landscaping, cleaning of facilities, installing signs, or fee collection. In other locations, Park Rangers may have duties that include working with the public to provide information, conduct permit compliance, and safety inspections, including responding to emergency situations, and ensuring facilities and customer use areas are free of visible safety hazards.",
+        "imageurl": "assets/nate.jpg"
+      },
+      {
+        "name": "Lara",
+        "lastname": "Miranda",
+        "position": "Outdoor Recreation Planner",
+        "description": "She serves as advanced Outdoor Recreation Planner for outdoor recreation programs (e.g. Wilderness, National Conservation Lands, Off-Highway Vehicles, Visitor Services, Visual Resources, Travel, Transportation, Wild & Scenic Rivers, Accessibility) in the Deschutes Field Office. The position is responsible for analyzing, evaluating, and coordinating matters involving recreation planning, development, and use. At this grade level, the position is responsible for independently planning and carrying out assignments, adapting guidelines for application to specific cases or problems, analyzing the results, and recommending changes to existing procedures and methods. The position will ensure consistency with all existing regulations, policies, and directives, as well as with BLM Washington Office (WO) program direction.",
+        "imageurl": "assets/lara.jpg"
+      }
+      
+    ]
+  }

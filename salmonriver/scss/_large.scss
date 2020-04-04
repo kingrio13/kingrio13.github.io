@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+
+        
+    .section-gallery-grid div, .section-grid{
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+            
+    }
+
+    footer section{
+        grid-template-columns: repeat(3, 1fr);
+      
+    } 
+
+}

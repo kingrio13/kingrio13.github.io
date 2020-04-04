@@ -1,0 +1,57 @@
+@media only screen and (min-width: 37.5em) {
+
+    .section-flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+            div{
+                flex-basis: 50%;
+                img{
+                    width: 80%;
+                    margin:auto;
+                    display: block;
+                }
+            }    
+    }
+
+    .section-gallery-grid div{
+
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .menu-wrapper{
+        left: 20px;
+      }
+
+      footer section, .section-grid{
+          grid-template-columns: repeat(2, 1fr);
+        
+      } 
+
+      .hide-mobile{
+        display: block;
+      }
+
+      .list-inline{
+          text-align: left;
+      }
+
+      .form_set{
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em,1fr);
+      }
+      
+    .form_set label{
+        grid-column: 2 / 2;
+    }
+    
+    .form_set input, .form_set datalist, .form_set button, .form_set textarea, .form_set select {
+        grid-column: 3 / 4;
+    }
+
+    .reservation-note-table{
+        padding-left:2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+}

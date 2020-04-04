@@ -35,7 +35,7 @@ aside{
 
 header{
     grid-area: hd;
-    background-color: $maincolor;
+    background-color: $mainColor;
     display: flex;
     flex-wrap: wrap;
     flex:auto;
@@ -81,7 +81,7 @@ article{
 
 section.contentimage{
     padding:20px;
-    background:$maincolor24;
+    background:$mainColor;
 }
 
 section{
@@ -126,7 +126,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    background: $maincolor;
+    background: $mainColor;
 }
 
 /* main content here */
@@ -209,7 +209,7 @@ width: 100%;
     text-transform: uppercase;
     display: block;
     font-size: .7rem;
-    color:$maincolorad;
+    color:$mainColor;
     font-style: italic;
     font-family:$stylingfont;
   
@@ -324,7 +324,7 @@ font-size: 2.2rem;
 
 .fab {
     font-family: "Font Awesome 5 Brands";
-    color:$maincolor;
+    color:$mainColor;
 }
 .fa-facebook:hover, .fa-twitter:hover,.fa-instagram:hover ,.fa-pinterest:hover, .fa-youtube:hover{
 
@@ -424,13 +424,13 @@ font-size: 2.2rem;
  .form_set input[type=submit] {
      padding:20px;
      cursor: pointer;
-     background-color: $maincolor;
+     background-color: $mainColor;
      border: 1px solid #333;
      color:$defaultfontcolor;
  }
 
  .form_set input[type=submit]:hover{
-     background:$maincolorc9;
+     background:$mainColor;
      border:1px solid red;
  }
 
@@ -519,7 +519,7 @@ font-size: 2.2rem;
 .eventtowntitle{
     text-align: center;
     padding-bottom: 5px;
-    border-bottom: 1px solid $maincolor24;
+    border-bottom: 1px solid $mainColor;
 }
 
 .forecastflexdata{
@@ -529,7 +529,7 @@ font-size: 2.2rem;
 }
 
 .eventdiv{
-    background: $maincolor24;
+    background: $mainColor;
     padding:20px;
     transition-timing-function: ease-in;
     transition: 1s;
