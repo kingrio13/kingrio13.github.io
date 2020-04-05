@@ -12,16 +12,27 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   padding: 2em 3em;
+}
+
+header div:nth-child(2) {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+}
+
+header div:last-child {
+  text-align: right;
 }
 
 .header-out {
@@ -34,23 +45,7 @@ header {
   font-weight: bold;
 }
 
-.header-out .btn-ham:after {
-  color: #131424;
-  background: #fff;
-}
-
-.contactus-btn {
-  border: 1px solid #fff;
-  padding: 1em;
-}
-
-.contactus-btn a {
-  cursor: pointer;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-ham {
+.menu-wrapper .btn-ham {
   overflow: hidden;
   position: fixed;
   display: block;
@@ -60,7 +55,7 @@ header {
   margin: 0 auto;
 }
 
-.btn-ham a {
+.menu-wrapper .btn-ham a {
   font-family: "Advent Pro", sans-serif;
   display: block;
   position: relative;
@@ -71,7 +66,7 @@ header {
   border-radius: 5px;
 }
 
-.btn-ham a:hover {
+.menu-wrapper .btn-ham a:hover {
   text-decoration: inherit;
   color: #fff;
   background-color: #7996af;
@@ -79,7 +74,7 @@ header {
   transition: background-color .5s ease;
 }
 
-.btn-ham:after {
+.menu-wrapper .btn-ham:after {
   content: '\2630 Menu';
   display: block;
   height: auto;
@@ -93,7 +88,7 @@ header {
   cursor: pointer;
 }
 
-.btn-ham ul {
+.menu-wrapper .btn-ham ul {
   opacity: 0;
   width: auto;
   margin: 0px;
@@ -103,7 +98,7 @@ header {
   background-color: #fff;
 }
 
-.btn-ham ul li {
+.menu-wrapper .btn-ham ul li {
   background-color: #fff;
   margin-top: 5px;
   border-radius: 5px;
@@ -121,17 +116,19 @@ header {
   margin-top: 1em;
 }
 
-.menu-wrapper:hover .btn-ham {
+.isactive .btn-ham {
+  display: block;
   width: 150px;
   padding-bottom: 5px;
 }
 
-.menu-wrapper:hover .btn-ham::after {
+.isactive .btn-ham::after {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.menu-wrapper:hover .btn-ham ul {
+.isactive .btn-ham ul {
+  display: block;
   opacity: 1;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
@@ -146,14 +143,31 @@ header {
   transition: all 1s ease;
 }
 
-.menu-wrapper:hover .btn-ham li {
+.isactive .btn-ham li {
+  display: contents;
   height: 25px;
   -webkit-transition: height 1s ease;
   transition: height 1s ease;
 }
 
-.menu-wrapper:hover .btn-ham li:hover {
+.isactive .btn-ham li:hover {
   border-bottom: 1px solid #d2c9c9;
+}
+
+.close-menu {
+  display: block;
+  color: red;
+}
+
+.contactus-btn {
+  border: 1px solid #fff;
+  padding: 1em;
+}
+
+.contactus-btn a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 .hero-banner {
@@ -500,7 +514,59 @@ h1, h2, h3, h4, h5 {
   padding-left: .2em;
 }
 
+.forecast_disclaimer {
+  font-size: .8em;
+  font-style: italic;
+  font-family: "Advent Pro", sans-serif;
+}
+
+.header-out .btn-ham:after {
+  color: #fff;
+  background: #131424;
+}
+
 @media only screen and (min-width: 37.5em) and (min-width: 37.5em) {
+  .close-menu, .btn-ham ul li:last-child {
+    display: none;
+  }
+  .menu-wrapper:hover .btn-ham {
+    width: 150px;
+    padding-bottom: 5px;
+  }
+  .menu-wrapper:hover .btn-ham::after {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .menu-wrapper:hover .btn-ham ul {
+    opacity: 1;
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    margin-top: 30px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .menu-wrapper:hover .btn-ham li {
+    height: 25px;
+    -webkit-transition: height 1s ease;
+    transition: height 1s ease;
+  }
+  .menu-wrapper:hover .btn-ham li:hover {
+    border-bottom: 1px solid #d2c9c9;
+  }
+  header div:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  header div:last-child {
+    text-align: right;
+  }
   .section-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -556,6 +622,9 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (min-width: 60em) and (min-width: 60em) {
+  .close-menu {
+    display: none;
+  }
   .section-gallery-grid div, .section-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;

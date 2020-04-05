@@ -1,6 +1,8 @@
 @media only screen and (min-width: 60em) {
 
-        
+    .close-menu{
+        display: none;
+    } 
     .section-gallery-grid div, .section-grid{
 
         grid-template-columns: 1fr 1fr 1fr;

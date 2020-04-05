@@ -1,19 +1,11 @@
-
-const hambutton = document.querySelector(".ham");
+const hambutton = document.querySelector(".menu-wrapper");
 hambutton.addEventListener("click", toggleMenu, false);
-
+const btnham= document.querySelector('btn-ham');
 
 
 function toggleMenu() {
-  document.querySelector(".mainmenu_ul").classList.toggle("responsive");
-  hambutton.classList.toggle("changex");
-  
-  if (hambutton.classList.contains("changex")) {
-    hambutton.innerHTML="X";
-  } else {
-    hambutton.innerHTML="&#9776; Menu";
-  }
-  
-  
+  //document.querySelector(".menu-wrapper").classList.toggle("responsive");
+  hambutton.classList.toggle("isactive");
+
 
 }
