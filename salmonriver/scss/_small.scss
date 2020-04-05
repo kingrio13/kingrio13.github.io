@@ -1,485 +1,494 @@
 body{
-    font-size: 18px;
-    height: 100vh;
-    font-family: $mainfont;
-    background: $mainBG;
-    color:$mainFont;
+  font-size: 18px;
+  height: 100vh;
+  font-family: $mainfont;
+  background: $mainBG;
+  color:$mainFontcolor;
 }
 
+p{
+font-family: $mainfont;
+}
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2em 3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em 3em;
 
-    div:nth-child(2){
-      grid-column: 3/3;
-    }
-    div:last-child{
-      text-align: right;
-    }
- 
+  div:nth-child(2){
+    grid-column: 3/3;
+  }
+  div:last-child{
+    text-align: right;
+  }
+
 }
 
 .header-out{
-  background: $highlightedBG;
-  opacity: .9;
-  color: $textColorDark;
-  span{
-    a{
-      font-weight: bold;
-      
-    }
+background: $highlightedBG;
+opacity: .9;
+color: $textColorDark;
+span{
+  a{
+    font-weight: bold;
+    
   }
+}
 }
 
 
 
 .menu-wrapper .btn-ham{
-  overflow: hidden;
-  position: fixed;
+overflow: hidden;
+position: fixed;
+display: block;
+padding-left: 5px;
+padding-right: 5px;
+width: 150px;
+margin: 0 auto;
+a{
+  font-family: $headerFont;
   display: block;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 150px;
-  margin: 0 auto;
-  a{
-    font-family: $headerFont;
-    display: block;
-    position: relative;
-    color: $mainFont;
-    text-decoration: none;
-    overflow: hidden;
-    padding: 5px;
-    border-radius: 5px;
-    &:hover{
-      text-decoration: inherit;
-      color:$textColorLight;
-      background-color: $highlightedBG;
-      transition: background-color .5s ease;
-    }
-  }
-  &:after{
-      content:'\2630 Menu';
-    display: block;
-    height: auto;
-    width: auto;
-    line-height: 2em;
-    text-align: center;
+  position: relative;
+  color: $mainFontcolor;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 5px;
+  &:hover{
+    text-decoration: inherit;
     color:$textColorLight;
-    transition: all .3s .5s ease;
-    background: $highlightedBG;
-    cursor: pointer;
-  
+    background-color: $highlightedBG;
+    transition: background-color .5s ease;
   }
- 
-  ul{
-    opacity: 0;
-    width: auto;
-    margin: 0px;
-    transition: all .5s ease;
-    text-align: center;
+}
+&:after{
+    content:'\2630 Menu';
+  display: block;
+  height: auto;
+  width: auto;
+  line-height: 2em;
+  text-align: center;
+  color:$textColorLight;
+  transition: all .3s .5s ease;
+  background: $highlightedBG;
+  cursor: pointer;
+
+}
+
+ul{
+  opacity: 0;
+  width: auto;
+  margin: 0px;
+  transition: all .5s ease;
+  text-align: center;
+  background-color:$sectionBG;
+  li{
     background-color:$sectionBG;
-    li{
-      background-color:$sectionBG;
-      margin-top: 5px;
-      border-radius: 5px;
-      width: auto;
-      height: 0px;
-      overflow: hidden;
-      transition: height 1s ease;
-      
-    }
+    margin-top: 5px;
+    border-radius: 5px;
+    width: auto;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s ease;
+    
   }
-  
+}
+
 }
 
 .menu-wrapper{
-  position: absolute;
-  left: 0px;
-  z-index: 10000;
-  margin-top: 1em;
+position: absolute;
+left: 0px;
+z-index: 10000;
+margin-top: 1em;
 }
 
 
 
 .isactive{      
-  .btn-ham{
+.btn-ham{
+  display: block;
+  width: 150px;
+  padding-bottom: 5px;
+  &::after{
+    transition: all .3s ease;
+  }
+  ul{
     display: block;
-    width: 150px;
-    padding-bottom: 5px;
-    &::after{
-      transition: all .3s ease;
-    }
-    ul{
-      display: block;
-      opacity: 1;
-      margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  padding-inline-start: 0px;
-      margin-top: 30px;
-      transition: all 1s ease;
-    }
-    li{
-      display:contents;
-      height:25px;
-      transition: height 1s ease;
-      &:hover{
-        border-bottom: 1px solid darken(#e9e5e5, 10);;
-      }
+    opacity: 1;
+    margin-block-start: 0px;
+margin-block-end: 0px;
+margin-inline-start: 0px;
+padding-inline-start: 0px;
+    margin-top: 30px;
+    transition: all 1s ease;
+  }
+  li{
+    display:contents;
+    height:25px;
+    transition: height 1s ease;
+    &:hover{
+      border-bottom: 1px solid darken(#e9e5e5, 10);;
     }
   }
+}
 }
 
 
 .close-menu{
-  display: block;
-  color:red;
+display: block;
+color:red;
 }    
 
 .contactus-btn{
-  border: 1px solid $textColorLight;
-  padding:1em;
-  
-  a{
-    cursor: pointer;
-    color: $textColorLight;
-    text-decoration: none;
-  }
-  
+border: 1px solid $textColorLight;
+padding:1em;
+
+a{
+  cursor: pointer;
+  color: $textColorLight;
+  text-decoration: none;
+}
+
 }
 
 
 
-  .hero-banner{
-    padding: 50vh 0;
-    background: #123 url("/salmonriver/assets/hero-banner.jpg");
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center;
-  }
+.hero-banner{
+  padding: 50vh 0;
+  background: #123 url("/salmonriver/assets/hero-banner.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
+}
 
-  .section-flex, footer{
-    padding:2em;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-  }
- 
-  .section-flex{
-    
-    background-color: $sectionBG;
+.section-flex, footer{
+  padding:2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
 
-   flex-direction: row;
-    flex-wrap: wrap;
-        div{
-            flex-basis: 100%;
-            img{
-                width: 100%;
-                margin:auto;
-                display: block;
-            }
-        }    
+.section-flex{
+  
+  background-color: $sectionBG;
+
+ flex-direction: row;
+  flex-wrap: wrap;
+      div{
+          flex-basis: 100%;
+          img{
+              width: 100%;
+              margin:auto;
+              display: block;
+          }
+      }    
 }
 
 .colorAlt{
- background-color:$sectionALT;
+background-color:$sectionALT;
 }
 
 
 .section-gallery-grid div{
-  display: grid;
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 1em;
+padding:1em;
+background: $sectionBG;
+img{
+  width: 100%;
+  display: block;
+  margin:auto;
+}
+}
+
+footer {
+  background: $highlightedBG;
+  section{
+  display:grid;
   grid-template-columns: 1fr;
-  grid-gap: 1em;
-  padding:1em;
-  background: $sectionBG;
-  img{
-    width: 100%;
-    display: block;
-    margin:auto;
+  grid-gap: 2em;
+} 
+.footer-credits{
+  border-top:1px solid #d8d8d8;
+  padding-top: 1em;
+  display: block;
+  text-align: center;
 }
+.footer-first-row{
+  padding-bottom: 1em;
 }
-
-  footer {
-    background: $highlightedBG;
-    section{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-  } 
-  .footer-credits{
-    border-top:1px solid #d8d8d8;
-    padding-top: 1em;
-    display: block;
-    text-align: center;
-  }
-  .footer-first-row{
-    padding-bottom: 1em;
-  }
-    
+  
 }
 
 
 
-  .list-inline {
-    padding-left: 0;
-    list-style: none;
-    color: $mainFont;
-    text-align: center;
-    li {
-      display: inline-block;
-      line-height: 20px;
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 1.9em;
-      }
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  color: $mainFontcolor;
+  text-align: center;
+  li {
+    display: inline-block;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.9em;
+    }
 }
 
 .fab {
-    font-family: "Font Awesome 5 Brands";
-    color:$textColorDark;
+  font-family: "Font Awesome 5 Brands";
+  color:$textColorDark;
 }
 .fa-facebook:hover, .fa-twitter:hover,.fa-instagram:hover ,.fa-pinterest:hover, .fa-youtube:hover{
 
-    color:$textColorLight;
-    
-    }
-
-    .footer_header{
-      clear:both;
-      width:100%;
-      display:block;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #d8d8d8;
-      padding-bottom: .3em;
+  color:$textColorLight;
+  
   }
 
-
-  .fade-in{    
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-  }
-
-  .appear{
-    opacity: 1;
-  }
-
-  .footer-menu{
-    list-style: none;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-
-    li a{
-      text-decoration: none;
-      color: $mainFont;
-      font-size: 1.1em;
-      &:hover{
-        color: $textColorLight;
-      }
-    }
-
-  }
+  .footer_header{
+    clear:both;
+    width:100%;
+    display:block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: .3em;
+}
 
 
-  .section-header,.footer_header{
-    font-size: 1.2em;
-    font-family: $headerFont;
-  }
+.fade-in{    
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
 
-  .gallery-title{
-    font-size: 1.9em;
-    display: block;
-    margin:auto;
-    text-align: center;
-    background: $sectionBG;
-    padding:1rem;
-  }
+.appear{
+  opacity: 1;
+}
 
-  h1,h2,h3,h4,h5{
-    clear: both;
-    width: 100%;
-  }
+.footer-menu{
+  list-style: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 
-  .center{
-    text-align: center;
-    p{
-      text-align: center;
-      display: block;
-      width: 100%;
-    }
-  }
-
-  .hide-mobile{
-    display: none;
-  }
-
-  .mainlogo{
-    height: 50px;
-  }
-
-  .crumbs{
-    background: $sectionBG;
-    span{
-      padding:2em;
-      font-size: .7em;
-    }
-  }
-
-
-  // this is for river guides
-  .section-grid{
-    display: grid;
-    padding: 2em;
-    font-size: $headerFont;
-    grid-template-columns: 1fr;
-
-    div{
-      h2{
-        margin-block-end: 0em;
-        width: 100%;
-        margin:auto;
-        display: block;
-        text-align: center;
-      }
-      span{
-        width: 100%;
-        text-align: center;
-        display: block;
-      }
-      div{
-        padding-top: 1em;
-      }
-      img{
-        display: block;
-        width: 80%;
-        margin:auto;
-      }
-    }
-  }
-
-  .hero-banner{
-    div{    width: 80%;
-      margin-top: -50px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      h2{
-        margin-block-end: 0.2em;
-      }
-    }
-    
-    .hero-content{
-      font-size: 2em;
+  li a{
+    text-decoration: none;
+    color: $mainFontcolor;
+    font-size: 1.1em;
+    &:hover{
       color: $textColorLight;
     }
   }
 
-  .section-grid-forms{
-    background:$sectionBG;
-    padding:2em;
+}
+
+
+.section-header,.footer_header{
+  font-size: 1.4em;
+  font-family: $headerFont;
+}
+
+.gallery-title{
+  font-size: 1.9em;
+  display: block;
+  margin:auto;
+  text-align: center;
+  background: $sectionBG;
+  padding:1rem;
+}
+
+h1,h2,h3,h4,h5{
+  clear: both;
+  width: 100%;
+}
+
+.center{
+  text-align: center;
+  p{
+    text-align: center;
+    display: block;
+    width: 100%;
   }
+}
 
-  .form_set{
-    display: grid;
-    grid-template-columns:minmax(1em, 1fr) minmax(1em, 3fr);
-    justify-content: center;
-    grid-gap: .5em;
-    align-items: center;
-    padding:5px;
-    
- }
+.hide-mobile{
+  display: none;
+}
 
- 
- .form_set label{
-  grid-column: 1 / 2;
+.mainlogo{
+  height: 50px;
+}
+
+.crumbs{
+  background: $sectionBG;
+  span{
+    padding:2em;
+    font-size: .7em;
+  }
+}
+
+
+// this is for river guides
+.section-grid{
+  display: grid;
+  padding: 2em;
+  font-size: $headerFont;
+  grid-template-columns: 1fr;
+
+  div{
+    h2{
+      margin-block-end: 0em;
+      width: 100%;
+      margin:auto;
+      display: block;
+      text-align: center;
+    }
+    span{
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+    div{
+      padding-top: 1em;
+    }
+    img{
+      display: block;
+      width: 80%;
+      margin:auto;
+    }
+  }
+}
+
+.hero-banner{
+  div{    width: 80%;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      margin-block-end: 0.2em;
+    }
+  }
+  
+  .hero-content{
+    font-size: 2em;
+    color: $textColorLight;
+  }
+}
+
+.section-grid-forms{
+  background:$sectionBG;
+  padding:2em;
+}
+
+.form_set{
+  display: grid;
+  grid-template-columns:minmax(1em, 1fr) minmax(1em, 3fr);
+  justify-content: center;
+  grid-gap: .5em;
+  align-items: center;
+  padding:5px;
+  
+}
+
+
+.form_set label{
+grid-column: 1 / 2;
 }
 
 .form_set input, .form_set datalist, .form_set button {
-  grid-column: 2 / 2;
+grid-column: 2 / 2;
 }
 
 
 .contact-map{
-  
-  span{
-    width: 100%;
-  display: block;
-  margin-bottom: 1em;
-  }
+
+span{
+  width: 100%;
+display: block;
+margin-bottom: 1em;
+}
 }
 
 .reservation-note{
-  font-size: .8em;
-  font-style: italic;
-  font-family: $mainFont;
-  text-align: center;
-  padding:2em;
+font-size: .8em;
+font-style: italic;
+font-family: $mainfont;
+text-align: center;
+padding:2em;
 }
 
 .reservation-note-table{
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  font-size: 1em;
-  font-style: normal;
-  justify-items: center;
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+font-size: 1em;
+font-style: normal;
+justify-items: center;
 
-  
-  .reservation-header{
-    font-size: 1.2em;
-    background:$mainBG;
-    color: $textColorLight;
-    width: 100%;
-    text-align: center;
-  }  
+
+.reservation-header{
+  font-size: 1.2em;
+  background:$mainBG;
+  color: $textColorLight;
+  width: 100%;
+  text-align: center;
+}  
 }
 
 
 
 .section-weather{
-  padding: 2em;
+padding: 2em;
 .weather_info_wrapper{
-  display: grid;
-  grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em,1fr);
-        
-        h2{
-          margin-block-end: 0.4em;
-        }
-      .weather_info_row1{
-        grid-column: 2 / 2;
-        text-align: right;
-        padding-right: .2em;
+display: grid;
+grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(200px, 400px) minmax(1em,1fr);
+      
+      h2{
+        margin-block-end: 0.4em;
       }
+    .weather_info_row1{
+      grid-column: 2 / 2;
+      text-align: right;
+      padding-right: .2em;
+    }
 
-      .weather_info_row2{
-        grid-column: 3 / 4;
-        text-align: left;
-        padding-left: .2em; 
-  }
-  }
+    .weather_info_row2{
+      grid-column: 3 / 4;
+      text-align: left;
+      padding-left: .2em; 
+}
+}
 }
 
 .forecast_disclaimer{
-  font-size: .8em;
-  font-style: italic;
-  font-family: $headerFont;
+font-size: .8em;
+font-style: italic;
+font-family: $headerFont;
 }
 
 .header-out{
-  .btn-ham:after{
-    color: $textColorLight;
-    background: $mainBG;
-  
+.btn-ham:after{
+  color: $textColorLight;
+  background: $mainBG;
+
 }
+}
+
+.resources-list li{
+list-style: none;
+text-align: left;
+padding:1em;
 }

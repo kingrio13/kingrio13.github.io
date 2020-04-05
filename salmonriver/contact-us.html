@@ -78,6 +78,28 @@
                     </ul>
                     
 
+                    <form method="POST" id="reservation" action="thankyou.html">
+                        <div class="form_set">
+                            <label for="fullname">Full Name</label> 
+                            <input type="text" name="fullname" id="fullname" pattern="[a-zA-Z\.\- ]{5,}" required title="Please check the name you inputted!" autofocus>
+                        </div>
+                        
+        
+                        <div class="form_set">
+                            <label for="uemail">Email</label>
+                            <input type="email" name="uemail" id="uemail" placeholder="kingrio.miranda@gmail.com">
+                        </div>    
+        
+                        <div class="form_set">        
+                        <label for="ucomment">Message</label>
+                        <textarea id="ucomment" name="ucomment"></textarea>
+                        </div>
+                    
+                        <div class="form_set">
+                            <input id="usubmit" type="submit">
+                        </div>
+                    </form>    
+
             </div>
             <div class="contact-map">
                 <h3>Visit Us</h3>
@@ -133,15 +155,6 @@
              </section>
 
         </footer>        
-
-
-
-
-
-
-
-
-
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js" defer></script>

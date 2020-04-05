@@ -3,45 +3,57 @@
       {
         "name": "Diana May",
         "lastname": "Miranda",
-        "position": "ceo",
-        "description": "He leads the way on looking to the future for change opportunities. ",
+        "certification":"Profesional River Guide",
+        "experience":"5 years",
+        "email":"diana@salmonriver.com",
+        "description": "Diana is a great team leader and knowleadgable in different strokes in Rafting. She is adventurous and love to be with Nature. She also knowleadgable in First Aid.",
         "imageurl": "assets/dianamay.jpg"
       },
        {
         "name": "Rio",
         "lastname": "Miranda",
-        "position": "River Guide",
-        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
-        "imageurl": "assets/riomichael.jpg"
+        "certification":"Profesional River Guide",
+        "experience":"15 years",
+        "email":"rio@salmonriver.com",
+        "description": "He belongs to a family of river Guide. He safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. ",
+        "imageurl": "assets/rio.jpg"
       },
       
       {
         "name": "Michael",
         "lastname": "Miranda",
-        "position": "River Guide",
-        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
-        "imageurl": "assets/riomichael.jpg"
+        "certification":"Profesional River Guide",
+        "experience":"25 years",
+        "email":"michael@salmonriver.com",
+        "description": "He started rafting on his teen age and he decided to make it for living. He work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience.",
+        "imageurl": "assets/michael.jpg"
       },
       {
         "name": "King",
         "lastname": "Miranda",
-        "position": "River Guide",
-        "description": "Safely navigate oar and/or paddle rafts down Class I - IV+ rivers. Excellent risk management capability in remote settings. Work positively with other team members to implement all aspects of a ROW trip from pack-up to clean-up in order to provide guests with a safe, meaningful and memorable experience. Engage and respond to guests in a positive, friendly and supportive manner, including meeting their expressed and unexpressed needs. Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
-        "imageurl": "assets/riomichael.jpg"
+        "certification":"Profesional River Guide",
+        "experience":"12 years",
+        "email":"king@salmonriver.com",
+        "description": "He loves to study river paths. He Provide meaningful interpretation to our guests on natural and cultural history topics pertinent to the trip, such as geology, Wild and Scenic Rivers, early homesteaders, Pacific salmon etc. ",
+        "imageurl": "assets/king.jpg"
       },
       
       {
         "name": "Nate",
         "lastname": "Miranda",
-        "position": "Park Rangers",
-        "description": "Park Rangers support the Bureau's recreation program. In some locations some of the positions may have duties that focus on assisting in the performance of day-to-day operations at a visitor center or customer use area that provide facilities such as campgrounds, picnic areas, trails, and/or other specialized recreational opportunities. Park Rangers at these locations may perform duties such as facility maintenance/repair, litter removal, hauling, routine trail maintenance, toilet cleaning, basic carpentry, landscaping, cleaning of facilities, installing signs, or fee collection. In other locations, Park Rangers may have duties that include working with the public to provide information, conduct permit compliance, and safety inspections, including responding to emergency situations, and ensuring facilities and customer use areas are free of visible safety hazards.",
+        "certification":"Profesional River Guide",
+        "experience":"15 years",
+        "email":"nate@salmonriver.com",
+        "description": "He is a Nature Lover, He ensure everythin is in order. He ensure guests doesnt litter but respecting nature.",
         "imageurl": "assets/nate.jpg"
       },
       {
         "name": "Lara",
         "lastname": "Miranda",
-        "position": "Outdoor Recreation Planner",
-        "description": "She serves as advanced Outdoor Recreation Planner for outdoor recreation programs (e.g. Wilderness, National Conservation Lands, Off-Highway Vehicles, Visitor Services, Visual Resources, Travel, Transportation, Wild & Scenic Rivers, Accessibility) in the Deschutes Field Office. The position is responsible for analyzing, evaluating, and coordinating matters involving recreation planning, development, and use. At this grade level, the position is responsible for independently planning and carrying out assignments, adapting guidelines for application to specific cases or problems, analyzing the results, and recommending changes to existing procedures and methods. The position will ensure consistency with all existing regulations, policies, and directives, as well as with BLM Washington Office (WO) program direction.",
+        "certification":"Profesional River Guide",
+        "experience":"8 years",
+        "email":"lara@salmonriver.com",
+        "description": "She loves the river, the nature and the adventure. She was doing water rafting since she was 12. She went to different competion and won awards.",
         "imageurl": "assets/lara.jpg"
       }
       

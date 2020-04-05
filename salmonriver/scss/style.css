@@ -6,6 +6,10 @@ body {
   color: #131424;
 }
 
+p {
+  font-family: "Overlock SC", cursive;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -323,7 +327,7 @@ footer .footer-first-row {
 }
 
 .section-header, .footer_header {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: "Advent Pro", sans-serif;
 }
 
@@ -460,7 +464,7 @@ h1, h2, h3, h4, h5 {
 .reservation-note {
   font-size: .8em;
   font-style: italic;
-  font-family: #131424;
+  font-family: "Overlock SC", cursive;
   text-align: center;
   padding: 2em;
 }
@@ -523,6 +527,12 @@ h1, h2, h3, h4, h5 {
 .header-out .btn-ham:after {
   color: #fff;
   background: #131424;
+}
+
+.resources-list li {
+  list-style: none;
+  text-align: left;
+  padding: 1em;
 }
 
 @media only screen and (min-width: 37.5em) and (min-width: 37.5em) {
