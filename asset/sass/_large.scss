@@ -1,0 +1,24 @@
+@media only screen and (min-width: 60em) {
+
+    footer{
+        .footer-first-row{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    section{
+        .container{
+            .userlist-wrap{
+            grid-template-columns: minmax(1em, .8fr) repeat(2, minmax(200px, 1fr))repeat(2, .5fr) minmax(1em, .8fr);
+              
+                div:first-child{
+                    grid-column: 2/2;
+                }
+                div:nth-child(2){
+                    grid-template-columns: 3/3;
+                }
+            }
+        }
+    }
+
+}

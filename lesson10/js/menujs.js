@@ -1,9 +1,10 @@
-const hambutton = document.querySelector(".ham");
-hambutton.addEventListener("click", toggleMenu, false);
+
+const hambutton = document.querySelector("#showemail");
+hambutton.addEventListener("click", toggleForm, false);
 
 
 
-function toggleMenu() {
+function toggleForm() {
   document.querySelector(".navigation").classList.toggle("responsive");
   hambutton.classList.toggle("changex");
   
@@ -16,3 +17,4 @@ function toggleMenu() {
   
 
 }
+
