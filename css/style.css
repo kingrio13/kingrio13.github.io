@@ -39,12 +39,12 @@ ul {
 }
 
 .menu-icon-wrapper {
-  width: 300px;
+  max-width: 300px;
   height: 80px;
 }
 
 .menu-icon-wrapper nav {
-  transform: translateX(120%);
+  transform: translateX(-250%);
   background: #ffffff;
   height: 100vh;
   transition: all .5s ease-out;
@@ -296,6 +296,10 @@ section .container p {
 
 #myskills .container {
   margin-bottom: 1em;
+}
+
+.menu-icon.open {
+  right: -80px;
 }
 
 .cover {

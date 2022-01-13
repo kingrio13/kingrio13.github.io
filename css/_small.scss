@@ -51,10 +51,10 @@ ul{
     }
     
     .menu-icon-wrapper{
-      width: 300px;
+      max-width: 300px;
       height:80px;
       nav{
-      transform: translateX(120%);
+      transform: translateX(-250%);
        background:$mainBG;
         height: 100vh;
         
@@ -358,6 +358,10 @@ section{
     }
 }
 
+
+.menu-icon.open{
+    right: -80px;
+}
 
 
 
