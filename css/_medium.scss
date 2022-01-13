@@ -1,7 +1,50 @@
 
 @media only screen and (min-width: 37.5em) {
+
+    header .container nav ul {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    
+    .navigation li .ham{
+        display: none;
+    }
+    
+    #menu-icon{
+        display: none;
+    }
+
+    .menu-icon-wrapper{
+        width: 100%;
+
+        nav{
+            transform:unset;
+            background:unset;
+            height: unset;
+            
+        }
+    }
+    
+    header .container nav ul {
+        padding: 0;
+        text-align: right;
+    }
+    
+    .menu-icon-wrapper nav ul li{
+    
+        padding:0px;
+    }
+    
+    
     
 
+    
+    header .container{
+        grid-template-columns: auto 1fr;
+
+    }
     .featured-flex{
         div{
             flex-basis: 50%;

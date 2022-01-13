@@ -42,10 +42,11 @@ ul{
 
 
 
+//=====header======
 
 
 .menu-icon-wrapper.active nav{
-    transform: translateX(0%);
+    transform: translateX(20%);
       z-index:-1;
     }
     
@@ -53,15 +54,20 @@ ul{
       width: 300px;
       height:80px;
       nav{
-      transform: translateX(-120%);
-       background:$mainfontcolorhover;
+      transform: translateX(120%);
+       background:$mainBG;
         height: 100vh;
         
         transition: all .5s ease-out;
       }
     }
     
-    
+    header .container nav ul {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
     
     .menu-icon {
@@ -72,7 +78,7 @@ ul{
       display: flex;
       align-items: center;
       top: 20px;
-      left: 10px;
+      right: 10px;
       
       span,
       span::before,
@@ -81,9 +87,9 @@ ul{
         content: '';
         width: 28px;
         height: 2.5px;
+    
         background:$mainfontcolorhover;
         border-radius: 20px;
-        display: flex;
       }
       
       span::before {
@@ -98,36 +104,71 @@ ul{
     
     .menu-icon{
       transform: translateX(0%);
+      z-index: 1;
     }
     
     .menu-icon.open{
-      transform: translateX(250px);
+      transform: translateX(-200px);
        z-index:99;
     }
-  
     
+    .menu-icon-wrapper{
+       nav{
     
+        ul{
+          li{
+            list-style:none;
+            padding:20px;
+            &:first-child{
+              padding-top:40px;
+            }
+            a{
+              text-decoration:none;
+                color:$mainBG;
+                font-size:1em;
+                &:hover{
+                  color:lighten($mainBG, 40);
+                  }
+            }
+          }
+        }
+      }
+    }
+    
+
     
     .menu-icon.open span{
-          background: transparent;
+        background: transparent;
     }
     
     
   
     .menu-icon.open > span::before {
         transform: rotate(-225deg);
-       @include span-open();
+        top: 0;
     }
     .menu-icon.open > span::after {
         transform: rotate(225deg);
-        @include span-open();
+        top: 0;
         
     }
     
-
-
-
-
+    
+      
+  
+  
+  
+  nav ul {
+      list-style: none;
+      margin-top:0px;
+      li{
+          a{
+          text-decoration: none;
+        
+          }
+      }
+  }
+ 
 
 
 .featured-flex .contactus_linked{
@@ -306,7 +347,7 @@ section{
 #myskills{
     
     span{
-    margin: 1em 0;
+    margin: 1em .5em 0 0;
     font-size: 1.5em;
     font-family: $mainfont;
     text-transform: uppercase;
@@ -369,6 +410,7 @@ ul.webskills{
     font-family: $otherfont;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 50px;
     li{
         list-style: none;
         line-height: 1.5em;
@@ -630,7 +672,6 @@ footer{
 .alert-error{
     background-color: $errorBG;
     color:$fontfordark;
-
     ul{
         li{
             list-style: none;

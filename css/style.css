@@ -34,7 +34,7 @@ ul {
 }
 
 .menu-icon-wrapper.active nav {
-  transform: translateX(0%);
+  transform: translateX(20%);
   z-index: -1;
 }
 
@@ -44,10 +44,17 @@ ul {
 }
 
 .menu-icon-wrapper nav {
-  transform: translateX(-120%);
-  background: #f0ca47;
+  transform: translateX(120%);
+  background: #ffffff;
   height: 100vh;
   transition: all .5s ease-out;
+}
+
+header .container nav ul {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .menu-icon {
@@ -58,7 +65,7 @@ ul {
   display: flex;
   align-items: center;
   top: 20px;
-  left: 10px;
+  right: 10px;
 }
 
 .menu-icon span,
@@ -70,7 +77,6 @@ ul {
   height: 2.5px;
   background: #f0ca47;
   border-radius: 20px;
-  display: flex;
 }
 
 .menu-icon span::before {
@@ -83,11 +89,31 @@ ul {
 
 .menu-icon {
   transform: translateX(0%);
+  z-index: 1;
 }
 
 .menu-icon.open {
-  transform: translateX(250px);
+  transform: translateX(-200px);
   z-index: 99;
+}
+
+.menu-icon-wrapper nav ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu-icon-wrapper nav ul li:first-child {
+  padding-top: 40px;
+}
+
+.menu-icon-wrapper nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.menu-icon-wrapper nav ul li a:hover {
+  color: white;
 }
 
 .menu-icon.open span {
@@ -96,16 +122,21 @@ ul {
 
 .menu-icon.open > span::before {
   transform: rotate(-225deg);
-  top: 0px;
-  background: #ffffff;
-  z-index: 99;
+  top: 0;
 }
 
 .menu-icon.open > span::after {
   transform: rotate(225deg);
-  top: 0px;
-  background: #ffffff;
-  z-index: 99;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
 }
 
 .featured-flex .contactus_linked {
@@ -257,7 +288,7 @@ section .container p {
 }
 
 #myskills span {
-  margin: 1em 0;
+  margin: 1em .5em 0 0;
   font-size: 1.5em;
   font-family: "Abel";
   text-transform: uppercase;
@@ -398,6 +429,7 @@ ul.webskills {
   font-family: "Open Sans", Sans-serif;
   max-width: 500px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 ul.webskills li {
@@ -678,6 +710,35 @@ section .container .userlist-wrap span {
 }
 
 @media only screen and (min-width: 37.5em) and (min-width: 37.5em) {
+  header .container nav ul {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .navigation li .ham {
+    display: none;
+  }
+  #menu-icon {
+    display: none;
+  }
+  .menu-icon-wrapper {
+    width: 100%;
+  }
+  .menu-icon-wrapper nav {
+    transform: unset;
+    background: unset;
+    height: unset;
+  }
+  header .container nav ul {
+    padding: 0;
+    text-align: right;
+  }
+  .menu-icon-wrapper nav ul li {
+    padding: 0px;
+  }
+  header .container {
+    grid-template-columns: auto 1fr;
+  }
   .featured-flex div {
     flex-basis: 50%;
   }
