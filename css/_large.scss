@@ -1,8 +1,32 @@
 @media only screen and (min-width: 60em) {
 
+
+    nav{
+        .main-nav{
+            list-style: none;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding:10px;
+                }   
+            }
+        }
+    }
+    
+    
+    .menu-icon-wrapper nav ul li{
+    
+        padding:0px;
+    }
+
+    
+
+
     footer{
         .footer-first-row{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
