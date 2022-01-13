@@ -8,6 +8,43 @@ body {
   font-size: 16px;
 }
 
+.featured-image {
+  opacity: 0;
+}
+
+.featured-image.appear {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.featured-wrapper {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.featured-wrapper.appear {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: transform .5s;
+}
+
+.webskills li.appear .progressbar {
+  animation: animateskills 1s linear;
+}
+
+#myskills .container span {
+  opacity: 0;
+}
+
+#myskills .container span.appear {
+  opacity: 1;
+  transition: 1s ease-in;
+}
+
+.contactus_linked ul li {
+  opacity: 0;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -314,102 +351,82 @@ section .container p {
 
 .web-1 .progressbar {
   width: 5%;
-  animation: animateskills 1s linear;
 }
 
 .web-2 .progressbar {
   width: 10%;
-  animation: animateskills 1s linear;
 }
 
 .web-3 .progressbar {
   width: 15%;
-  animation: animateskills 1s linear;
 }
 
 .web-4 .progressbar {
   width: 20%;
-  animation: animateskills 1s linear;
 }
 
 .web-5 .progressbar {
   width: 25%;
-  animation: animateskills 1s linear;
 }
 
 .web-6 .progressbar {
   width: 30%;
-  animation: animateskills 1s linear;
 }
 
 .web-7 .progressbar {
   width: 35%;
-  animation: animateskills 1s linear;
 }
 
 .web-8 .progressbar {
   width: 40%;
-  animation: animateskills 1s linear;
 }
 
 .web-9 .progressbar {
   width: 45%;
-  animation: animateskills 1s linear;
 }
 
 .web-10 .progressbar {
   width: 50%;
-  animation: animateskills 1s linear;
 }
 
 .web-11 .progressbar {
   width: 55%;
-  animation: animateskills 1s linear;
 }
 
 .web-12 .progressbar {
   width: 60%;
-  animation: animateskills 1s linear;
 }
 
 .web-13 .progressbar {
   width: 65%;
-  animation: animateskills 1s linear;
 }
 
 .web-14 .progressbar {
   width: 70%;
-  animation: animateskills 1s linear;
 }
 
 .web-15 .progressbar {
   width: 75%;
-  animation: animateskills 1s linear;
 }
 
 .web-16 .progressbar {
   width: 80%;
-  animation: animateskills 1s linear;
 }
 
 .web-17 .progressbar {
   width: 85%;
-  animation: animateskills 1s linear;
 }
 
 .web-18 .progressbar {
   width: 90%;
-  animation: animateskills 1s linear;
 }
 
 .web-19 .progressbar {
   width: 95%;
-  animation: animateskills 1s linear;
 }
 
 .web-20 .progressbar {
   width: 100%;
-  animation: animateskills 1s linear;
   width: 99%;
 }
 

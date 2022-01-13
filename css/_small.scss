@@ -7,6 +7,46 @@ font-family: $mainfont;
 font-size: $basefont;
 }
 
+.featured-image{
+    opacity: 0;
+}
+
+.featured-image.appear{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+
+.featured-wrapper{
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.featured-wrapper.appear{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: transform .5s;
+}
+
+
+.webskills li.appear .progressbar{
+    animation: animateskills 1s linear;
+}
+
+
+#myskills .container span{
+    opacity: 0;
+}
+
+#myskills .container span.appear{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.contactus_linked ul li{
+    opacity: 0;
+}
+
 .container{
     width: 90%;
     max-width: 1200px;
@@ -378,7 +418,7 @@ section{
 @for $i from 1 through 20 {
     .web-#{$i} .progressbar{
       width: $i * 5%;
-      animation: animateskills 1s linear;
+    //   animation: animateskills 1s linear;
       @if $i==20 {
         width: 99%;
       }
