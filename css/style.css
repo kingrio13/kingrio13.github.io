@@ -36,17 +36,19 @@ ul {
 .menu-icon-wrapper.active nav {
   transform: translateX(20%);
   z-index: -1;
+  opacity: 1;
 }
 
 .menu-icon-wrapper {
-  max-width: 300px;
+  max-width: 100%;
   height: 80px;
 }
 
 .menu-icon-wrapper nav {
-  transform: translateX(-250%);
+  transform: translateX(0%);
   background: #ffffff;
   height: 100vh;
+  opacity: 0;
   transition: all .5s ease-out;
 }
 
@@ -160,8 +162,8 @@ nav ul li a {
 
 .featured-flex .contactus_linked ul li a {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   line-height: 70px;
   background: #ffd700;
@@ -719,6 +721,10 @@ section .container .userlist-wrap span {
     align-items: flex-end;
     justify-content: flex-end;
   }
+  .featured-flex .contactus_linked ul li a {
+    width: 70px;
+    height: 70px;
+  }
   .navigation li .ham {
     display: none;
   }
@@ -732,6 +738,7 @@ section .container .userlist-wrap span {
     transform: unset;
     background: unset;
     height: unset;
+    opacity: 1;
   }
   header .container nav ul {
     padding: 0;
