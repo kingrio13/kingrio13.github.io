@@ -71,6 +71,31 @@ ul{
     }
 }
 
+.go_up{
+    opacity: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.fa-arrow-up{
+    font-size: 30px;
+    padding: 20px;
+
+    background: $mainfontcolorhover;
+    opacity: 80%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.fa-arrow-up:hover{
+
+    opacity: 1;
+}
+
 
 //=====header======
 
