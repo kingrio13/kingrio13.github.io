@@ -83,9 +83,9 @@ ul{
 .fa-arrow-up{
     font-size: 30px;
     padding: 20px;
-
+    color: $fontfordark;
     background: $mainfontcolorhover;
-    opacity: 80%;
+    opacity: 100%;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -144,7 +144,7 @@ ul{
       display: flex;
       align-items: center;
       top: 20px;
-      right: 10px;
+      right: 40px;
       
       span,
       span::before,
@@ -154,7 +154,7 @@ ul{
         width: 28px;
         height: 2.5px;
     
-        background:$mainfontcolorhover;
+        background:$border;
         border-radius: 20px;
       }
       
@@ -186,7 +186,7 @@ ul{
             list-style:none;
             padding:20px;
             &:first-child{
-              padding-top:40px;
+              padding-top:80px;
             }
             a{
               text-decoration:none;
@@ -256,7 +256,7 @@ ul{
                 width: 50px;
                 height: 50px;
                 text-align: center;
-                line-height: 70px;
+                line-height: 50px;
                 background: #ffd700;
                 border-radius: 50%;
                 font-size: 30px;
@@ -292,7 +292,7 @@ header{
             li{
                 list-style: none;
                 display: inline-block;
-                padding:0 1em 0em 1em;
+                padding:1em 1em 0em 1em;
                 a{
                     font-size: 1.4em;
                     text-transform: uppercase;
@@ -301,7 +301,7 @@ header{
 
                     &:hover{
                         border-bottom: 2px solid grey;
-                        color:$mainfontcolorhover;
+                        color:$darkerHighlight;
                     }
                 }
             } 
@@ -311,8 +311,14 @@ header{
 }
 
 .hero-banner{
+
+  
+    background-repeat: no-repeat;
+    height: auto;
+
+
     display: flex;
-    height: 80vh;
+   
     background:url('/asset/img/hero-banner.png');
     background-size: cover;
     // background-blend-mode: overlay;
@@ -406,7 +412,7 @@ section{
     padding-bottom:1px;
     width: 40%;
     margin: 0 auto;
-    background: $mainfontcolorhover;
+    background: $specialSection;
     }
 
 
@@ -559,14 +565,25 @@ ul.webskills{
     }
 }
 
+.specialSection{
+    border-top: .3em solid $specialSection;
+    background: $specialSection;
+    color: $fontfordark;
+}
+
         
 .withborder{
-    border-top: .3em solid $mainfontcolorhover;
+    border-top: .3em solid $border;
+
 }
 
 .meet{
     padding: 2em 0em;
-    background:$mainfontcolorhover;
+    background:$darkerHighlight;
+    color: $fontfordark;
+    li a{
+        color: $fontfordark;
+    }
     .divider{
         background:$mainfontcolor;
     }

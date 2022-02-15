@@ -1,6 +1,26 @@
 @media only screen and (min-width: 60em) {
 
 
+    .hero-banner{
+
+        height: 80vh;
+    }
+
+    .featured-flex .contactus_linked ul li a{
+        line-height: 70px;
+    }
+
+    .menu-icon-wrapper.active nav{
+
+        transform: translateX(0%);
+    }
+
+    .menu-icon-wrapper nav ul li{
+        &:first-child{
+          padding-top:40px;
+        }
+       }
+
     nav{
         .main-nav{
             list-style: none;
